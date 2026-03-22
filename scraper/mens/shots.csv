@@ -4449,3 +4449,158 @@ id,text,homeAway,scoringPlay,participants,shootingPlay,pointsAttempted,period.nu
 401830012120038421,Gioacchino Panzini makes layup (DJ Nix assists),away,True,"[{'id': '5241716'}, {'id': '4684840'}]",True,2,2,5241716,24,2,1002,572,LayUpShot,401830012
 401830012120038590,Cameron McNamee makes free throw 1 of 2,home,True,[{'id': '5241722'}],True,1,2,5241722,25,0,1001,540,MadeFreeThrow,401830012
 401830012120038669,Cameron McNamee makes free throw 2 of 2,home,True,[{'id': '5241722'}],True,1,2,5241722,25,0,1001,540,MadeFreeThrow,401830012
+401851435120261687,Trevor Mullin makes driving layup,home,True,[{'id': '5177185'}],True,2,1,5177185,28,3,1002,572,LayUpShot,401851435
+401851435120261691,Trevor Mullin makes 24-foot three point jumper (Casey Simmons assists),home,True,"[{'id': '5177185'}, {'id': '4432692'}]",True,3,1,5177185,15,21,1003,558,JumpShot,401851435
+401851435120261694,Jake Fiegen makes 25-foot three point jumper (Josh Baldwin assists),away,True,"[{'id': '5175900'}, {'id': '5106245'}]",True,3,1,5175900,39,21,1003,558,JumpShot,401851435
+401851435120261697,Isaac Celiscar makes 24-foot three point jumper (Casey Simmons assists),home,True,"[{'id': '5241754'}, {'id': '4432692'}]",True,3,1,5241754,49,5,1003,558,JumpShot,401851435
+401851435120261740,Jacob Beccles makes driving layup,away,True,[{'id': '5175898'}],True,2,1,5175898,28,4,1002,572,LayUpShot,401851435
+401851435120261741,Isaac Celiscar makes 24-foot three point jumper (Nick Townsend assists),home,True,"[{'id': '5241754'}, {'id': '5107174'}]",True,3,1,5241754,49,-1,1003,558,JumpShot,401851435
+401851435120261746,Cooper Noard makes layup (Josh Baldwin assists),away,True,"[{'id': '5106247'}, {'id': '5106245'}]",True,2,1,5106247,22,4,1002,572,LayUpShot,401851435
+401851435120261749,Trevor Mullin misses 22-foot three point jumper,home,,[{'id': '5177185'}],True,3,1,5177185,3,1,1006,558,JumpShot,401851435
+401851435120261753,Nick Townsend makes 5-foot jumper (Trevor Mullin assists),home,True,"[{'id': '5107174'}, {'id': '5177185'}]",True,2,1,5107174,26,5,1002,558,JumpShot,401851435
+401851435120261755,Adam Hinton makes 27-foot three point jumper (Josh Baldwin assists),away,True,"[{'id': '5106243'}, {'id': '5106245'}]",True,3,1,5106243,9,23,1003,558,JumpShot,401851435
+401851435120261765,Trevor Mullin misses 12-foot jumper,home,,[{'id': '5177185'}],True,2,1,5177185,14,1,1005,558,JumpShot,401851435
+401851435120261798,Trevor Mullin makes 24-foot three point jumper,home,True,[{'id': '5177185'}],True,3,1,5177185,49,5,1003,558,JumpShot,401851435
+401851435120261800,Anthony Nimani misses layup,away,,[{'id': '5241718'}],True,2,1,5241718,27,5,1005,572,LayUpShot,401851435
+401851435120261803,Nick Townsend misses 24-foot three point jumper,home,,[{'id': '5107174'}],True,3,1,5107174,5,12,1006,558,JumpShot,401851435
+401851435120261805,Kaspar Sepp makes layup (Anthony Nimani assists),away,True,"[{'id': '5176404'}, {'id': '5241718'}]",True,2,1,5176404,22,2,1002,572,LayUpShot,401851435
+401851435120261807,Isaac Celiscar misses 22-foot three point jumper,home,,[{'id': '5241754'}],True,3,1,5241754,3,1,1006,558,JumpShot,401851435
+401851435120261809,Adam Hinton makes 11-foot jumper,away,True,[{'id': '5106243'}],True,2,1,5106243,35,4,1002,558,JumpShot,401851435
+401851435120261810,Trevor Mullin misses 24-foot three point jumper,home,,[{'id': '5177185'}],True,3,1,5177185,5,13,1006,558,JumpShot,401851435
+401851435120261859,Nick Townsend misses 24-foot three point jumper,home,,[{'id': '5107174'}],True,3,1,5107174,10,18,1006,558,JumpShot,401851435
+401851435120261861,Trevor Mullin makes 0-foot tip in dunk,home,True,[{'id': '5177185'}],True,2,1,5177185,25,1,1002,437,TipShot,401851435
+401851435120261862,Jacob Beccles makes driving layup,away,True,[{'id': '5175898'}],True,2,1,5175898,23,3,1002,572,LayUpShot,401851435
+401851435120261863,Isaac Celiscar makes 11-foot turnaround jump shot (Trevor Mullin assists),home,True,"[{'id': '5241754'}, {'id': '5177185'}]",True,2,1,5241754,24,11,1002,558,JumpShot,401851435
+401851435120261865,Jacob Beccles makes 24-foot three point jumper (Anthony Nimani assists),away,True,"[{'id': '5175898'}, {'id': '5241718'}]",True,3,1,5175898,2,-1,1003,558,JumpShot,401851435
+401851435120261867,Jordan Brathwaite makes 25-foot three point jumper (Isaac Celiscar assists),home,True,"[{'id': '5241753'}, {'id': '5241754'}]",True,3,1,5241753,34,24,1003,558,JumpShot,401851435
+401851435120261872,Nick Townsend misses layup,home,,[{'id': '5107174'}],True,2,1,5107174,22,4,1005,572,LayUpShot,401851435
+401851435120261973,Riley Fox misses 6-foot jumper,home,,[{'id': '5241755'}],True,2,1,5241755,27,6,1005,558,JumpShot,401851435
+401851435120261975,Isaac Celiscar makes 0-foot tip in dunk,home,True,[{'id': '5241754'}],True,2,1,5241754,25,1,1002,437,TipShot,401851435
+401851435120261977,Cooper Noard makes 26-foot three point jumper (Jacob Beccles assists),away,True,"[{'id': '5106247'}, {'id': '5175898'}]",True,3,1,5106247,24,26,1003,558,JumpShot,401851435
+401851435120262008,Adam Hinton makes layup (Jake Fiegen assists),away,True,"[{'id': '5106243'}, {'id': '5175900'}]",True,2,1,5106243,24,2,1002,572,LayUpShot,401851435
+401851435120262010,Isaac Celiscar makes layup (Nick Townsend assists),home,True,"[{'id': '5241754'}, {'id': '5107174'}]",True,2,1,5241754,28,2,1002,572,LayUpShot,401851435
+401851435120262014,Isaac Celiscar makes layup (Riley Fox assists),home,True,"[{'id': '5241754'}, {'id': '5241755'}]",True,2,1,5241754,20,4,1002,572,LayUpShot,401851435
+401851435120262041,Cooper Noard misses 25-foot three point jumper,away,,[{'id': '5106247'}],True,3,1,5106247,30,25,1006,558,JumpShot,401851435
+401851435120262047,Riley Fox misses 14-foot jumper,home,,[{'id': '5241755'}],True,2,1,5241755,12,4,1005,558,JumpShot,401851435
+401851435120262049,Jake Fiegen makes 24-foot three point jumper (Anthony Nimani assists),away,True,"[{'id': '5175900'}, {'id': '5241718'}]",True,3,1,5175900,38,21,1003,558,JumpShot,401851435
+401851435120262051,Riley Fox makes layup,home,True,[{'id': '5241755'}],True,2,1,5241755,27,3,1002,572,LayUpShot,401851435
+401851435120262057,Riley Fox misses free throw 1 of 1,home,,[{'id': '5241755'}],True,1,1,5241755,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262079,Samson Aletan makes 0-foot tip in dunk,home,True,[{'id': '5177187'}],True,2,1,5177187,25,1,1002,437,TipShot,401851435
+401851435120262086,Jake Fiegen misses 24-foot three point jumper,away,,[{'id': '5175900'}],True,3,1,5175900,44,16,1006,558,JumpShot,401851435
+401851435120262088,Jake Fiegen makes 15-foot jumper (Cooper Noard assists),away,True,"[{'id': '5175900'}, {'id': '5106247'}]",True,2,1,5175900,30,15,1002,558,JumpShot,401851435
+401851435120262090,Nick Townsend makes layup (Samson Aletan assists),home,True,"[{'id': '5107174'}, {'id': '5177187'}]",True,2,1,5107174,24,3,1002,572,LayUpShot,401851435
+401851435120262092,Jacob Beccles makes 25-foot three point jumper (Cooper Noard assists),away,True,"[{'id': '5175898'}, {'id': '5106247'}]",True,3,1,5175898,43,17,1003,558,JumpShot,401851435
+401851435120262094,Riley Fox misses 24-foot three point jumper,home,,[{'id': '5241755'}],True,3,1,5241755,49,2,1006,558,JumpShot,401851435
+401851435120262096,Casey Simmons misses 25-foot three point jumper,home,,[{'id': '4432692'}],True,3,1,4432692,8,18,1006,558,JumpShot,401851435
+401851435120262126,Casey Simmons misses 25-foot three point jumper,home,,[{'id': '4432692'}],True,3,1,4432692,28,25,1006,558,JumpShot,401851435
+401851435120262130,Cooper Noard misses 24-foot three point jumper,away,,[{'id': '5106247'}],True,3,1,5106247,44,16,1006,558,JumpShot,401851435
+401851435120262132,Devon Arlington misses layup,home,,[{'id': '5107175'}],True,2,1,5107175,23,3,1005,572,LayUpShot,401851435
+401851435120262135,Kaspar Sepp makes layup (Adam Hinton assists),away,True,"[{'id': '5176404'}, {'id': '5106243'}]",True,2,1,5176404,28,1,1002,572,LayUpShot,401851435
+401851435120262137,Riley Fox misses 14-foot jumper,home,,[{'id': '5241755'}],True,2,1,5241755,20,13,1005,558,JumpShot,401851435
+401851435120262179,Samson Aletan misses 5-foot jumper,home,,[{'id': '5177187'}],True,2,1,5177187,22,4,1005,558,JumpShot,401851435
+401851435120262181,Adam Hinton misses 26-foot three point jumper,away,,[{'id': '5106243'}],True,3,1,5106243,25,27,1006,558,JumpShot,401851435
+401851435120262196,Trevor Mullin misses 25-foot three point jumper,home,,[{'id': '5177185'}],True,3,1,5177185,45,15,1006,558,JumpShot,401851435
+401851435120262218,Casey Simmons makes layup,home,True,[{'id': '4432692'}],True,2,1,4432692,28,3,1002,572,LayUpShot,401851435
+401851435120262219,Cooper Noard misses 28-foot three point jumper,away,,[{'id': '5106247'}],True,3,1,5106247,11,25,1006,558,JumpShot,401851435
+401851435120262221,Josh Baldwin misses 26-foot three point jumper,away,,[{'id': '5106245'}],True,3,1,5106245,24,26,1006,558,JumpShot,401851435
+401851435120262223,Adam Hinton misses 11-foot turnaround jump shot,away,,[{'id': '5106243'}],True,2,1,5106243,29,11,1005,558,JumpShot,401851435
+401851435120262225,Jordan Brathwaite makes 18-foot jumper (Nick Townsend assists),home,True,"[{'id': '5241753'}, {'id': '5107174'}]",True,2,1,5241753,32,16,1002,558,JumpShot,401851435
+401851435120262227,Adam Hinton misses 25-foot three point jumper,away,,[{'id': '5106243'}],True,3,1,5106243,35,23,1006,558,JumpShot,401851435
+401851435120262229,Jake Fiegen makes 18-foot jumper (Josh Baldwin assists),away,True,"[{'id': '5175900'}, {'id': '5106245'}]",True,2,1,5175900,29,17,1002,558,JumpShot,401851435
+401851435120262231,Jordan Brathwaite makes 24-foot three point jumper (Nick Townsend assists),home,True,"[{'id': '5241753'}, {'id': '5107174'}]",True,3,1,5241753,6,14,1003,558,JumpShot,401851435
+401851435120262233,Jacob Beccles makes driving layup (Josh Baldwin assists),away,True,"[{'id': '5175898'}, {'id': '5106245'}]",True,2,1,5175898,25,5,1002,572,LayUpShot,401851435
+401851435120262235,Nick Townsend makes layup,home,True,[{'id': '5107174'}],True,2,1,5107174,26,3,1002,572,LayUpShot,401851435
+401851435120262236,Cooper Noard misses 28-foot three point jumper,away,,[{'id': '5106247'}],True,3,1,5106247,7,21,1006,558,JumpShot,401851435
+401851435120262280,Jake Fiegen makes driving layup,away,True,[{'id': '5175900'}],True,2,1,5175900,27,2,1002,572,LayUpShot,401851435
+401851435120262281,Nick Townsend makes 25-foot three point jumper (Isaac Celiscar assists),home,True,"[{'id': '5107174'}, {'id': '5241754'}]",True,3,1,5107174,45,16,1003,558,JumpShot,401851435
+401851435120262292,Jordan Brathwaite misses driving layup,home,,[{'id': '5241753'}],True,2,1,5241753,23,4,1005,572,LayUpShot,401851435
+401851435120262294,Adam Hinton makes 5-foot hook shot,away,True,[{'id': '5106243'}],True,2,1,5106243,29,3,1002,558,JumpShot,401851435
+401851435120262377,Trevor Mullin makes driving layup,home,True,[{'id': '5177185'}],True,2,1,5177185,26,1,1002,572,LayUpShot,401851435
+401851435120262435,Nick Townsend misses layup,home,,[{'id': '5107174'}],True,2,2,5107174,23,4,1005,572,LayUpShot,401851435
+401851435120262437,Nick Townsend misses layup,home,,[{'id': '5107174'}],True,2,2,5107174,21,4,1005,572,LayUpShot,401851435
+401851435120262440,Adam Hinton misses 24-foot three point jumper,away,,[{'id': '5106243'}],True,3,2,5106243,33,23,1006,558,JumpShot,401851435
+401851435120262442,Jacob Beccles misses layup,away,,[{'id': '5175898'}],True,2,2,5175898,27,2,1005,572,LayUpShot,401851435
+401851435120262444,Jacob Beccles misses 25-foot three point jumper,away,,[{'id': '5175898'}],True,3,2,5175898,25,25,1006,558,JumpShot,401851435
+401851435120262446,Isaac Celiscar makes layup,home,True,[{'id': '5241754'}],True,2,2,5241754,27,3,1002,572,LayUpShot,401851435
+401851435120262449,Jake Fiegen makes layup (Josh Baldwin assists),away,True,"[{'id': '5175900'}, {'id': '5106245'}]",True,2,2,5175900,28,1,1002,572,LayUpShot,401851435
+401851435120262453,Trevor Mullin makes 25-foot three point jumper (Nick Townsend assists),home,True,"[{'id': '5177185'}, {'id': '5107174'}]",True,3,2,5177185,47,13,1003,558,JumpShot,401851435
+401851435120262462,Adam Hinton makes 23-foot three point jumper (Cooper Noard assists),away,True,"[{'id': '5106243'}, {'id': '5106247'}]",True,3,2,5106243,2,0,1003,558,JumpShot,401851435
+401851435120262464,Isaac Celiscar misses 25-foot three point jumper,home,,[{'id': '5241754'}],True,3,2,5241754,48,9,1006,558,JumpShot,401851435
+401851435120262468,Isaac Celiscar makes layup (Samson Aletan assists),home,True,"[{'id': '5241754'}, {'id': '5177187'}]",True,2,2,5241754,23,3,1002,572,LayUpShot,401851435
+401851435120262471,Jake Fiegen makes 26-foot three point jumper (Jacob Beccles assists),away,True,"[{'id': '5175900'}, {'id': '5175898'}]",True,3,2,5175900,24,26,1003,558,JumpShot,401851435
+401851435120262479,Isaac Celiscar makes layup (Samson Aletan assists),home,True,"[{'id': '5241754'}, {'id': '5177187'}]",True,2,2,5241754,28,3,1002,572,LayUpShot,401851435
+401851435120262499,Jake Fiegen makes layup (Anthony Nimani assists),away,True,"[{'id': '5175900'}, {'id': '5241718'}]",True,2,2,5175900,28,1,1002,572,LayUpShot,401851435
+401851435120262505,Jake Fiegen makes free throw 1 of 1,away,True,[{'id': '5175900'}],True,1,2,5175900,25,0,1001,540,MadeFreeThrow,401851435
+401851435120262516,Jake Fiegen misses 27-foot three point jumper,away,,[{'id': '5175900'}],True,3,2,5175900,37,25,1006,558,JumpShot,401851435
+401851435120262577,Anthony Nimani makes 24-foot three point jumper (Kaspar Sepp assists),away,True,"[{'id': '5241718'}, {'id': '5176404'}]",True,3,2,5241718,1,1,1003,558,JumpShot,401851435
+401851435120262581,Trevor Mullin misses 25-foot three point jumper,home,,[{'id': '5177185'}],True,3,2,5177185,41,19,1006,558,JumpShot,401851435
+401851435120262584,Isaac Celiscar makes layup,home,True,[{'id': '5241754'}],True,2,2,5241754,25,3,1002,572,LayUpShot,401851435
+401851435120262586,DJ Nix misses 23-foot three point jumper,away,,[{'id': '4684840'}],True,3,2,4684840,2,0,1006,558,JumpShot,401851435
+401851435120262597,Nick Townsend misses free throw 1 of 2,home,,[{'id': '5107174'}],True,1,2,5107174,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262604,Nick Townsend makes free throw 2 of 2,home,True,[{'id': '5107174'}],True,1,2,5107174,25,0,1001,540,MadeFreeThrow,401851435
+401851435120262613,Anthony Nimani makes layup (Kaspar Sepp assists),away,True,"[{'id': '5241718'}, {'id': '5176404'}]",True,2,2,5241718,28,3,1002,572,LayUpShot,401851435
+401851435120262618,Isaac Celiscar makes 8-foot jumper (Casey Simmons assists),home,True,"[{'id': '5241754'}, {'id': '4432692'}]",True,2,2,5241754,29,7,1002,558,JumpShot,401851435
+401851435120262619,Jake Fiegen misses 13-foot jumper,away,,[{'id': '5175900'}],True,2,2,5175900,19,12,1005,558,JumpShot,401851435
+401851435120262623,Jordan Brathwaite misses 26-foot three point jumper,home,,[{'id': '5241753'}],True,3,2,5241753,31,26,1006,558,JumpShot,401851435
+401851435120262626,Kaspar Sepp misses dunk,away,,[{'id': '5176404'}],True,2,2,5176404,25,2,1005,574,DunkShot,401851435
+401851435120262632,Nick Townsend misses free throw 1 of 2,home,,[{'id': '5107174'}],True,1,2,5107174,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262638,Nick Townsend misses free throw 2 of 2,home,,[{'id': '5107174'}],True,1,2,5107174,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262645,Adam Hinton misses 25-foot three point jumper,away,,[{'id': '5106243'}],True,3,2,5106243,43,17,1006,558,JumpShot,401851435
+401851435120262647,Trevor Mullin makes driving layup,home,True,[{'id': '5177185'}],True,2,2,5177185,24,3,1002,572,LayUpShot,401851435
+401851435120262648,Jake Fiegen misses layup,away,,[{'id': '5175900'}],True,2,2,5175900,29,6,1005,572,LayUpShot,401851435
+401851435120262688,Jake Fiegen misses 25-foot three point jumper,away,,[{'id': '5175900'}],True,3,2,5175900,38,22,1006,558,JumpShot,401851435
+401851435120262690,Trevor Mullin misses layup,home,,[{'id': '5177185'}],True,2,2,5177185,28,3,1005,572,LayUpShot,401851435
+401851435120262692,Samson Aletan makes 0-foot tip in dunk,home,True,[{'id': '5177187'}],True,2,2,5177187,25,1,1002,437,TipShot,401851435
+401851435120262693,Adam Hinton misses 26-foot three point jumper,away,,[{'id': '5106243'}],True,3,2,5106243,41,21,1006,558,JumpShot,401851435
+401851435120262697,Trevor Mullin misses 24-foot three point jumper,home,,[{'id': '5177185'}],True,3,2,5177185,43,17,1006,558,JumpShot,401851435
+401851435120262727,Cooper Noard makes driving layup (Kaspar Sepp assists),away,True,"[{'id': '5106247'}, {'id': '5176404'}]",True,2,2,5106247,27,3,1002,572,LayUpShot,401851435
+401851435120262730,Cooper Noard misses 27-foot three point jumper,away,,[{'id': '5106247'}],True,3,2,5106247,14,24,1006,558,JumpShot,401851435
+401851435120262732,Jordan Brathwaite makes 24-foot three point jumper (Isaac Celiscar assists),home,True,"[{'id': '5241753'}, {'id': '5241754'}]",True,3,2,5241753,44,15,1003,558,JumpShot,401851435
+401851435120262758,Jacob Beccles makes driving layup (Cooper Noard assists),away,True,"[{'id': '5175898'}, {'id': '5106247'}]",True,2,2,5175898,28,5,1002,572,LayUpShot,401851435
+401851435120262771,Trevor Mullin makes driving layup,home,True,[{'id': '5177185'}],True,2,2,5177185,27,1,1002,572,LayUpShot,401851435
+401851435120262734,Cooper Noard misses 25-foot three point jumper,away,,[{'id': '5106247'}],True,3,2,5106247,40,21,1006,558,JumpShot,401851435
+401851435120262779,Cooper Noard makes free throw 1 of 3,away,True,[{'id': '5106247'}],True,1,2,5106247,25,0,1001,540,MadeFreeThrow,401851435
+401851435120262780,Cooper Noard makes free throw 2 of 3,away,True,[{'id': '5106247'}],True,1,2,5106247,25,0,1001,540,MadeFreeThrow,401851435
+401851435120262781,Cooper Noard makes free throw 3 of 3,away,True,[{'id': '5106247'}],True,1,2,5106247,25,0,1001,540,MadeFreeThrow,401851435
+401851435120262782,Trevor Mullin misses 24-foot three point jumper,home,,[{'id': '5177185'}],True,3,2,5177185,5,14,1006,558,JumpShot,401851435
+401851435120262784,Jacob Beccles misses layup,away,,[{'id': '5175898'}],True,2,2,5175898,23,1,1005,572,LayUpShot,401851435
+401851435120262786,Jacob Beccles makes 23-foot three point jumper (Josh Baldwin assists),away,True,"[{'id': '5175898'}, {'id': '5106245'}]",True,3,2,5175898,48,1,1003,558,JumpShot,401851435
+401851435120262797,Isaac Celiscar misses 14-foot jumper,home,,[{'id': '5241754'}],True,2,2,5241754,29,14,1005,558,JumpShot,401851435
+401851435120262879,Nick Townsend misses layup,home,,[{'id': '5107174'}],True,2,2,5107174,24,6,1005,572,LayUpShot,401851435
+401851435120262890,Josh Baldwin misses free throw 1 of 2,away,,[{'id': '5106245'}],True,1,2,5106245,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262894,Josh Baldwin misses free throw 2 of 2,away,,[{'id': '5106245'}],True,1,2,5106245,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262903,Isaac Celiscar makes layup,home,True,[{'id': '5241754'}],True,2,2,5241754,26,5,1002,572,LayUpShot,401851435
+401851435120262916,Isaac Celiscar makes free throw 1 of 1,home,True,[{'id': '5241754'}],True,1,2,5241754,25,0,1001,540,MadeFreeThrow,401851435
+401851435120262918,Anthony Nimani misses 26-foot three point jumper,away,,[{'id': '5241718'}],True,3,2,5241718,42,20,1006,558,JumpShot,401851435
+401851435120262924,Jordan Brathwaite makes 22-foot three point jumper (Trevor Mullin assists),home,True,"[{'id': '5241753'}, {'id': '5177185'}]",True,3,2,5241753,3,0,1003,558,JumpShot,401851435
+401851435120262928,Anthony Nimani misses layup,away,,[{'id': '5241718'}],True,2,2,5241718,26,2,1005,572,LayUpShot,401851435
+401851435120262940,Nick Townsend makes 10-foot jumper (Jordan Brathwaite assists),home,True,"[{'id': '5107174'}, {'id': '5241753'}]",True,2,2,5107174,34,4,1002,558,JumpShot,401851435
+401851435120262973,Cooper Noard misses 25-foot three point jumper,away,,[{'id': '5106247'}],True,3,2,5106247,9,19,1006,558,JumpShot,401851435
+401851435120262984,Nick Townsend misses free throw 1 of 2,home,,[{'id': '5107174'}],True,1,2,5107174,25,0,1004,540,MadeFreeThrow,401851435
+401851435120262989,Nick Townsend makes free throw 2 of 2,home,True,[{'id': '5107174'}],True,1,2,5107174,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263001,Jacob Beccles makes free throw 1 of 2,away,True,[{'id': '5175898'}],True,1,2,5175898,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263007,Jacob Beccles misses free throw 2 of 2,away,,[{'id': '5175898'}],True,1,2,5175898,25,0,1004,540,MadeFreeThrow,401851435
+401851435120263016,Isaac Celiscar misses 13-foot turnaround jump shot,home,,[{'id': '5241754'}],True,2,2,5241754,38,2,1005,558,JumpShot,401851435
+401851435120263021,Cooper Noard misses 29-foot three point jumper,away,,[{'id': '5106247'}],True,3,2,5106247,40,25,1006,558,JumpShot,401851435
+401851435120263025,Jake Fiegen misses 28-foot three point jumper,away,,[{'id': '5175900'}],True,3,2,5175900,44,21,1006,558,JumpShot,401851435
+401851435120263027,Josh Baldwin misses tip in layup,away,,[{'id': '5106245'}],True,2,2,5106245,25,1,1005,437,TipShot,401851435
+401851435120263061,Jacob Beccles misses layup,away,,[{'id': '5175898'}],True,2,2,5175898,27,2,1005,572,LayUpShot,401851435
+401851435120263075,Josh Baldwin makes layup,away,True,[{'id': '5106245'}],True,2,2,5106245,29,3,1002,572,LayUpShot,401851435
+401851435120263082,Casey Simmons misses 24-foot three point jumper,home,,[{'id': '4432692'}],True,3,2,4432692,42,17,1006,558,JumpShot,401851435
+401851435120263086,Adam Hinton misses 25-foot three point jumper,away,,[{'id': '5106243'}],True,3,2,5106243,49,8,1006,558,JumpShot,401851435
+401851435120263088,Jake Fiegen makes 23-foot three point jumper (Jacob Beccles assists),away,True,"[{'id': '5175900'}, {'id': '5175898'}]",True,3,2,5175900,2,0,1003,558,JumpShot,401851435
+401851435120263119,Jacob Beccles misses driving layup,away,,[{'id': '5175898'}],True,2,2,5175898,26,3,1005,572,LayUpShot,401851435
+401851435120263128,Adam Hinton makes driving layup (Jacob Beccles assists),away,True,"[{'id': '5106243'}, {'id': '5175898'}]",True,2,2,5106243,28,4,1002,572,LayUpShot,401851435
+401851435120263150,Nick Townsend makes layup (Jordan Brathwaite assists),home,True,"[{'id': '5107174'}, {'id': '5241753'}]",True,2,2,5107174,27,4,1002,572,LayUpShot,401851435
+401851435120263152,Corbin Zentner misses 23-foot three point jumper,away,,[{'id': '5196671'}],True,3,2,5196671,48,3,1006,558,JumpShot,401851435
+401851435120263179,Casey Simmons makes free throw 1 of 2,home,True,[{'id': '4432692'}],True,1,2,4432692,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263207,Casey Simmons makes free throw 2 of 2,home,True,[{'id': '4432692'}],True,1,2,4432692,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263211,Jacob Beccles misses layup,away,,[{'id': '5175898'}],True,2,2,5175898,28,4,1005,572,LayUpShot,401851435
+401851435120263214,Jacob Beccles misses 25-foot three point jumper,away,,[{'id': '5175898'}],True,3,2,5175898,28,25,1006,558,JumpShot,401851435
+401851435120263217,Cooper Noard misses 25-foot three point jumper,away,,[{'id': '5106247'}],True,3,2,5106247,15,23,1006,558,JumpShot,401851435
+401851435120263242,Casey Simmons makes free throw 1 of 2,home,True,[{'id': '4432692'}],True,1,2,4432692,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263245,Casey Simmons misses free throw 2 of 2,home,,[{'id': '4432692'}],True,1,2,4432692,25,0,1004,540,MadeFreeThrow,401851435
+401851435120263252,Cooper Noard misses 24-foot three point jumper,away,,[{'id': '5106247'}],True,3,2,5106247,6,15,1006,558,JumpShot,401851435
+401851435120263275,Trevor Mullin makes free throw 1 of 2,home,True,[{'id': '5177185'}],True,1,2,5177185,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263280,Trevor Mullin makes free throw 2 of 2,home,True,[{'id': '5177185'}],True,1,2,5177185,25,0,1001,540,MadeFreeThrow,401851435
+401851435120263283,Mateen Rafiq misses 14-foot jumper,away,,[{'id': '5241717'}],True,2,2,5241717,36,8,1005,558,JumpShot,401851435
