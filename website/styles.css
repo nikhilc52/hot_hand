@@ -1,0 +1,328 @@
+* {
+    /* border: 1px red solid; */
+}
+
+@font-face {
+    font-family: 'cmu_serifitalic';
+    src: url('fonts/cmunti-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.header {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 92%;
+    width: 600px;
+    text-align: right;
+    margin-bottom: 30px;
+
+    h2 {
+        font-family: "roboto-slab", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        color: #121212;
+        text-align: left;
+    }
+
+    h3 {
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #363636;
+    }
+
+    p {
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+        margin: 1px;
+        color: #727272;
+    }
+
+    img {
+        z-index: -1;
+        position: absolute;
+        width: 80%;
+        height: auto;
+        top: -5vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.essay {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 92vw;
+    width: 600px;
+
+    h3 {
+        font-family: "roboto-slab", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 26px;
+        color: #121212;
+        margin: 35px 0px 20px 0px;
+    }
+
+    p {
+        font-family: "nimbus-roman", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        margin: 0px 0px 15px 0px;
+        color: #363636;
+        line-height: 30px;
+    }
+
+    .end-paragraph {
+        margin: 0px;
+    }
+
+    ul,
+    ol {
+        font-family: "nimbus-roman", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        padding-left: 22px;
+        color: #363636;
+        margin: 0px 0px 15px 0px;
+
+        li {
+            margin: 0px 0px 15px 0px;
+        }
+    }
+
+    blockquote {
+        font-family: "nimbus-roman", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        color: #363636;
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: #dfdfdf 2px solid;
+    }
+
+    hr {
+        border: 1px solid #dfdfdf;
+        width: 100%;
+        margin: 25px auto 25px;
+    }
+
+    .highlight {
+        background-image: url(../../images/highlight.svg);
+        background-size: 0% auto;
+        background-repeat: no-repeat;
+
+        transition: background-size 1.5s ease-in-out;
+    }
+
+    .highlight-animation {
+        background-size: 100% auto;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: underline #8C1E92 2.5px;
+}
+
+.table {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 92vw;
+    /* center horizontally over entire page */
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow-x: auto;
+
+    table {
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 15px auto;
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        th {
+            padding: 5px;
+        }
+
+        caption-side: bottom;
+
+        caption {
+            margin: 2px;
+            text-align: left;
+            color: #363636;
+            line-height: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+.image-container {
+    p {
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        color: #727272;
+        line-height: 18px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.big-image-container {
+    p {
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        display: flex;
+        justify-content: left;
+        width: 1000px;
+        max-width: 90vw;
+        margin: auto;
+        color: #727272;
+    }
+
+    img {
+        display: flex;
+        margin: auto;
+        width: 1000px;
+        max-width: 90vw;
+    }
+}
+
+.annotation-image {
+    z-index: -1;
+    position: absolute;
+}
+
+@media screen and (width <=900px) {
+    .annotation-image {
+        visibility: hidden;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    max-width: 85%;
+
+    font-family: "franklin-gothic-std",
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+
+    img {
+        width: 30px;
+    }
+
+    p{
+        margin: 2px;
+    }
+}
+
+.coin-flips {
+    margin: auto auto 15px;
+    overflow-wrap: anywhere;
+    max-width: 41ch;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'cmu_serifitalic';
+}
+
+#coin-simulation {
+
+    display: flex;
+    margin-bottom: 15px;
+
+    .selection {
+        text-align: center;
+        width: 25%;
+    }
+
+    .selection-label {
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        margin: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    select {
+        text-align: center;
+        font-family: "franklin-gothic-std", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        width: 80px;
+    }
+}
+
+.button {
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 15px auto 15px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "franklin-gothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.progress-bar {
+    font-family: "franklin-gothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    border: 1px solid black;
+    height: 4px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#sims-progress-bar {
+    background-color: #727272;
+    height: 4px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

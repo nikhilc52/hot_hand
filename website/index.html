@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Hand Mystery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/doh4fbq.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+    <!-- <link rel="icon" type="image/png" href="website/icon.png"> -->
+</head>
+
+<body>
+    <div class="header">
+        <!-- <img src="website/header_deco_color.png"> -->
+        <h2>The Hot Hand Mystery</h2>
+        <h3>All content written, coded, and arranged by <a href="https://nikhilchinchalkar.com/" target="_blank">
+                Nikhil Chinchalkar</a></h3>
+
+        <p>No Generative AI was used in the making of this project.</p>
+        <p>Mar. 30, 2026</p>
+    </div>
+
+    <div class="essay">
+        <p class="end-paragraph">
+            If you've ever watched basketball, you've probably heard the phrase "hot hand." It refers to the concept of
+            an "athlete having streaks of success higher than their average performance," but more specific to
+            basketball, it says that if a person made (or missed) their last shot, they are more likely to make (or
+            miss) the next one. There's some controversy as to whether or not this trend actually exists, and hence the
+            "hot hand" phrase is typically accompanied by either a "phenomenon" or "fallacy" suffix, depending on one's
+            beliefs.
+        </p>
+
+        <h3>The Background</h3>
+
+        <p>The phrase was first described in 1985, in "<a
+                href="https://www.sciencedirect.com/science/article/abs/pii/0010028585900106" target="_blank">The Hot
+                Hand in Basketball</a>" by Cornell University psychology
+            professor <a href="https://en.wikipedia.org/wiki/Thomas_Gilovich" target="_blank">Thomas Gilovich</a>,
+            alongside famed behavioral economist <a href="https://en.wikipedia.org/wiki/Amos_Tversky"
+                target="_blank">Amos Tversky</a>, and Stanford professor Robert
+            Vallone. I’ll refer to the collective as GTV, an acronym of their last names, from this point forward. In
+            the paper, GTV conduct surveys with hundreds of basketball fans from both Cornell and Stanford University to
+            demonstrate how widespread the belief in the “hot hand” actually was. 91% of responders believe that a
+            player has “a better chance of making a shot after having just <i>made</i> his last two or three shots than
+            he does
+            after having just <i>missed</i> his last two or three shots”. Such beliefs influence play: teammates may
+            pass the
+            ball to a player who has a believed “hot hand” just as a defending team may guard this player with slightly
+            more concentration. Moreover, the player may end up taking worse shots if they believe that they are “hot”
+            -- a phrase now known as a “heat check”. Clearly, understanding the “hot hand” is a fundamentally important
+            task.
+        </p>
+
+        <p>GTV assess this potential streakiness of basketball players’ shots through three methods: analyzing (1) the
+            field goal records of 48 home games played by the Philadelphia 76ers in 1980-81, (2) pairs of free throw
+            shots by Boston Celtics players in both the 1980-81 and 1981-82 seasons, and (3) results of a controlled
+            experiment involving a combined 26 players from Cornell men’s and women’s basketball teams. In all three
+            cases, the results of GTV showed a lack of any evidence of streakiness in basketball, at both professional
+            and collegiate levels. They proved the hot hand does not exist -- it was a fallacy.</p>
+
+
+        <div class="image-container">
+            <!-- <img src="https://placehold.co/600x100"> -->
+            <img src="images/gvt_paper_quote_2.png" style="border: 3px solid black;">
+            <img src="images/gvt_paper_quote.png" style="border: 3px solid black;">
+            <p style="margin-top: 10px;">Quotes from GVT's paper showing the hot hand as a fallacy.</p>
+        </div>
+
+        <p class="end-paragraph">Over 40 years removed from the study’s original publication date, basketball has
+            changed dramatically. At all
+            levels, the game is played with high scoring, on account of faster pace. Players are bigger, faster, and
+            stronger. Teams are significantly more invested in analytics than before. A question arises: do any of those
+            changes affect the results shown in GVT’s breakthrough paper?
+        </p>
+
+        <h3>The Setup</h3>
+
+        <p>To re-evaluate the hot hand fallacy through the lens of GVT, I reproduced the same exact analysis they
+            conducted for the Philadelphia 76ers’ field goal data in the 1980 NBA season, using the Cornell University
+            men’s and women’s basketball teams’ shot chart data for the 2025-26 season. Within the data, the hot hand
+            boils down to conditional probability, and the relationship between three key variables:
+            \(\text{Pr}(H\mid M^i)\), \(\text{Pr}(H\mid H^i)\)
+            and \(\text{Pr}(H)\). Here, \(H\) corresponds to a “hit”, or a basket successfully scored, and \(M\)
+            indicates a missed
+            shot. I also expand the notation using the superscript \(i\) to indicate a sequence of prior hits or misses.
+            So, the probability notation \(\text{Pr}(H\mid M^2)\) signifies the probability (\(\text{Pr}\)) of a player
+            hitting a shot (\(H\))
+            given (\(\mid\)) that they missed (\(M\)) the previous two shots. For instance, If the hot hand were to
+            exist, then we would expect \(\text{Pr}(H\mid M^i) < \text{Pr}(H) < \text{Pr}(H\mid H^i)\), or that the
+                probability of hitting a shot is higher if you just hit a shot than the probability of hitting a shot
+                without any prior knowledge, which is higher than the probability of hitting a shot if you just missed a
+                shot.</p>
+        </p>
+
+        <p class="end-paragraph">
+            Regardless of the nuances of the probability notation, the actual calculation of those numbers (and
+            other conditional probabilities) is fairly straightforward. From the list of field goal attempts
+            Cornell players took during the 2025-26 season, I first group the list by each player, then each
+            game, and note whether the last shot, the shot before that, and the shot before that were hits or
+            misses. Each \(\text{Pr}(H\mid M^i)\) (and \(\text{Pr}(H\mid H^i)\)) calculation amounts to
+            filtering to instances where a player
+            had just missed (or hit) the last \(i\) shots in a row, then calculating their shooting percentage
+            under those conditions.
+        </p>
+
+        <h3>The Results</h3>
+
+        <p>Narrowing down the data to only include males and females with substantial shooting volume (players
+            that attempted over 100 shots throughout the season) left 10 remaining athletes. For each of these
+            players, I also calculated the (serial) correlation between the probability of making a shot (in
+            general) and the probability of making a shot given that the player had just made a shot. The serial
+            correlation coefficient \(p\) takes on values between -1 and 1, with a \(p > 0\) indicating
+            \(\text{Pr}(H)\) and
+            \(\text{Pr}(H\mid H^1)\) move in the same direction (if one is high then so is the other), and \(p < 0\)
+                governing the opposite effect. If the hot hand effect were to exist, at least for the case of one made
+                basket, the correlation coefficient should be positive: a high value of \(\text{Pr}(H)\) should be
+                associated with a high value of \(\text{Pr}(H\mid H^1)\).</p>
+        </p>
+
+
+
+        <div class="table">
+            <table>
+                <caption>Note: since the first shot of each game cannot be conditioned, the parenthetical values in
+                    columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon which
+                    each probability is based is given in parentheses.</caption>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                        <th>P(hit|3 misses)</th>
+                        <th>P(hit|2 misses)</th>
+                        <th>P(hit| 1 miss)</th>
+                        <th>P(hit)</th>
+                        <th>P(hit|1 hit)</th>
+                        <th>P(hit| 2 hits)</th>
+                        <th>P(hit| 3 hits)</th>
+                        <th>Serial Correlation </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cooper Noard</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.5 (26)</td>
+                        <td>0.54 (67)</td>
+                        <td>0.52 (155)</td>
+                        <td>0.5 (346)</td>
+                        <td>0.46 (163)</td>
+                        <td>0.46 (69)</td>
+                        <td>0.4 (30)</td>
+                        <td>-0.080 </td>
+                    </tr>
+                    <tr>
+                        <td>Jake Fiegen</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.63 (24)</td>
+                        <td>0.46 (50)</td>
+                        <td>0.51 (111)</td>
+                        <td>0.55 (269)</td>
+                        <td>0.58 (134)</td>
+                        <td>0.56 (70)</td>
+                        <td>0.54 (37)</td>
+                        <td>0.079 </td>
+                    </tr>
+                    <tr>
+                        <td>Adam Hinton</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.72 (18)</td>
+                        <td>0.57 (49)</td>
+                        <td>0.54 (119)</td>
+                        <td>0.48 (259)</td>
+                        <td>0.45 (112)</td>
+                        <td>0.45 (42)</td>
+                        <td>0.53 (15)</td>
+                        <td>-0.070 </td>
+                    </tr>
+                    <tr>
+                        <td>Jacob Beccles</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>0.36 (11)</td>
+                        <td>0.39 (28)</td>
+                        <td>0.4 (70)</td>
+                        <td>0.47 (170)</td>
+                        <td>0.53 (72)</td>
+                        <td>0.5 (34)</td>
+                        <td>0.4 (15)</td>
+                        <td>0.108 </td>
+                    </tr>
+                    <tr>
+                        <td>Josh Baldwin</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.5 (10)</td>
+                        <td>0.46 (26)</td>
+                        <td>0.46 (63)</td>
+                        <td>0.45 (138)</td>
+                        <td>0.44 (50)</td>
+                        <td>0.41 (17)</td>
+                        <td>0.33 (6)</td>
+                        <td>-0.017 </td>
+                    </tr>
+                    <tr>
+                        <td>Emily Pape</td>
+                        <td>F</td>
+                        <td>SR</td>
+                        <td>0.42 (36)</td>
+                        <td>0.38 (79)</td>
+                        <td>0.39 (159)</td>
+                        <td>0.35 (283)</td>
+                        <td>0.29 (97)</td>
+                        <td>0.32 (28)</td>
+                        <td>0.33 (9)</td>
+                        <td>-0.088 </td>
+                    </tr>
+                    <tr>
+                        <td>Rachel Kaus</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>0.52 (31)</td>
+                        <td>0.43 (67)</td>
+                        <td>0.43 (138)</td>
+                        <td>0.44 (275)</td>
+                        <td>0.42 (110)</td>
+                        <td>0.34 (41)</td>
+                        <td>0.5 (10)</td>
+                        <td>-0.032 </td>
+                    </tr>
+                    <tr>
+                        <td>Clarke Jackson</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>0.59 (17)</td>
+                        <td>0.56 (48)</td>
+                        <td>0.45 (102)</td>
+                        <td>0.46 (227)</td>
+                        <td>0.48 (98)</td>
+                        <td>0.47 (45)</td>
+                        <td>0.45 (20)</td>
+                        <td>0.032 </td>
+                    </tr>
+                    <tr>
+                        <td>Paige Engels</td>
+                        <td>G</td>
+                        <td>SO</td>
+                        <td>0.5 (10)</td>
+                        <td>0.55 (31)</td>
+                        <td>0.41 (75)</td>
+                        <td>0.4 (160)</td>
+                        <td>0.33 (58)</td>
+                        <td>0.35 (17)</td>
+                        <td>0.2 (5)</td>
+                        <td>-0.121 </td>
+                    </tr>
+                    <tr>
+                        <td>Audrey Chen</td>
+                        <td>G</td>
+                        <td>SO</td>
+                        <td>0.31 (16)</td>
+                        <td>0.33 (30)</td>
+                        <td>0.35 (62)</td>
+                        <td>0.35 (118)</td>
+                        <td>0.35 (31)</td>
+                        <td>0.38 (8)</td>
+                        <td>1 (1)</td>
+                        <td>0.011 </td>
+                    </tr>
+                    <tr style="border-top: 2px solid black;">
+                        <td>Weighted Means</td>
+                        <td></td>
+                        <td></td>
+                        <td>0.51</td>
+                        <td>0.47</td>
+                        <td>0.46</td>
+                        <td>0.45</td>
+                        <td>0.45</td>
+                        <td>0.45</td>
+                        <td>0.45</td>
+                        <td>-0.024 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Table 1 shows the results of the described calculations: the first three columns list information about the
+            players, columns four through ten display conditional probabilities, and the last column shows the
+            aforementioned serial correlation. While the hot hand would indicate a strong, positive serial correlation
+            correlation, more than half of the players’ correlations are negative. As a measure of strength, I can test
+            the statistical significance of column ten, which is a way of assessing how unlikely a particular statistic
+            is. In the context of serial correlations, a test of statistical significance answers the question: “if a
+            player truly did not have any correlation between \(\text{Pr}(H)\) and \(\text{Pr}(H\mid H^1)\), how likely
+            is it to see the result I
+            saw?”. If it was very unlikely to see the actual result (with probability less than 5%), then the result is
+            statistically significant (and strong). Over all ten players, none of the serial correlations are
+            statistically significant. </p>
+
+        <p>An effect might be present among the remaining columns, and statistical significance can be measured with
+            paired t-tests for significant differences in the means between columns four and ten, columns five and nine,
+            and columns six and eight. Each of those tests fails to produce evidence in favor of the hot hand: each
+            difference between \(\text{Pr}(H\mid H^i)\) and \(\text{Pr}(H\mid M^i)\) is negative (and insignificant),
+            meaning players tend to have
+            slightly worse shooting outcomes when conditioning on consecutive hits versus consecutive misses (\(t=-1.10,
+            p=0.30\) for columns six and eight, \(t=-1.78, p=0.11\) for columns five and nine, and \(t=-0.62, p=0.55\)
+            for columns
+            four and ten). Outside of the statistical tests, simple observation of the final row of the table, the
+            weighted means, shows that conditioning on more makes actually decreases the probability that a player hits
+            the next shot. No matter which way you slice it, for Cornell players, the hot hand effect does not exist --
+            the same result that GVT got 40 years ago with their 76ers analysis. </p>
+
+        <p class="end-paragraph">I have not given you the full story, though. In 2018, 33 years after the GVT paper was
+            published, two
+            researchers from the Universidad de Alicante, Joshua B. Miller and Adam Sanjurjo, re-visited the original
+            study. What they found was a measurement error that was so unintuitive it escaped the brightest economists
+            and psychologists for over three decades.
+        </p>
+
+        <h3>The Twist</h3>
+
+        <p> The seemingly innocent calculation of conditional probability is where the error lies. To see it, imagine
+            you took all of the shot outcomes of a fictitious player who shoots 50% from the field and whose shot
+            attempts are truly independent from each other -- meaning the hot hand does not exist for this player. If
+            you created a string of those attempts, it might look like this:</p>
+
+        <div class="coin-flips">
+            HMHMHHMMHMMHHMMHHMMMMHMHMMMHMHHHHMHMMHMHMMMHMHHMMMHHMHHMMHHHMMHMMHHMHMHHMMHHHMMMHHMHMMMHMMMHMHHMHMHH
+        </div>
+
+        <p>
+            Now say you select all of the sequences in the above string that have some outcome preceded by three
+            consecutive hits: all \(HHH \rule{.5cm}{0.15mm} \) substrings, and put them into a bucket. From those
+            filtered substrings, if you
+            chose one at random and looked at the outcome of the subsequent shot (the \(\rule{.5cm}{0.15mm}\) in the
+            above
+            sequence) you
+            should expect the probability of observing an \(H\) to be exactly 50%: after all, the truly fictitious
+            player
+            does not have a hot hand. But that probability is not exactly 50%, it is actually slightly below.
+        </p>
+
+        <p> Consider the random selection of a sequence out of all the filtered substrings in the bucket. Imagine that
+            selection was \(HHH \rule{.5cm}{0.15mm} \), with the first \(H\) being the 10th shot in the sequence. If the
+            sequence was \(HHHH\), you
+            would actually have another \(HHH \rule{.5cm}{0.15mm} \) sequence, this time starting from the 11th shot in
+            the sequence, and you
+            would add this other sequence into the filtered substring bucket. But if the selection was actually
+            \(HHHM\),
+            that other sequence would not exist -- the bucket would remain the same size. That means if the sequence
+            were actually \(HHHH\), the probability of selecting that sequence would be slightly lower than the
+            probability
+            of selecting the sequence at the same position had it been \(HHHM\) (since the \(HHHH\) case would add
+            another
+            sequence from which to choose from). The difference in selection probability means that of any selected
+            \(HHH \rule{.5cm}{0.15mm} \)
+            sequence, the next shot is more likely to be a \(M\) than an \(H\), despite the true shooting probability
+            being 50%.
+            Similar principles create a downward bias for \(\text{Pr}(H\mid H^i)\) calculations for sequences of one
+            prior
+            hit or two
+            consecutive prior hits.</p>
+
+        <p> If you are not convinced, consider the below simulation, which performs the described conditional
+            probability calculations for \(\text{Pr}(H\mid H^3)\) on a selected number of generations of 10 consecutive
+            shots from our
+            fictitious, no-hot-hand player.</p>
+
+
+        <hr>
+
+        <div style="font-family: 'franklin-gothic-std', sans-serif; font-size: 15px; 
+        text-align: center; margin-bottom: 6px;">Sample
+            sequence:</div>
+        <div class="coin-flips" id="coin-flip-sim-text">HMHMHHMMHM</div>
+
+        <div id="coin-simulation">
+            <div class="selection">
+                <div class="selection-label">Number of simulations:</div>
+                <select id="nsims">
+                    <option value="1">1</option>
+                    <option value="10">10</option>
+                    <option value="100" selected="selected">100</option>
+                    <option value="1000">1000</option>
+                    <option value="10000">10000</option>
+                </select>
+            </div>
+            <div class="selection">
+                <div class="selection-label">Number of hits to condition on:</div>
+                <select id="nhits">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2" selected="selected">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="selection">
+                <div class="selection-label">Probability of a hit:</div>
+                <select id="prob">
+                    <option value="0.25">0.25</option>
+                    <option value="0.5" selected="selected">0.5</option>
+                    <option value="0.75">0.75</option>
+                </select>
+            </div>
+            <div class="selection">
+                <div class="selection-label">Number of shots:</div>
+                <select id="nshots">
+                    <option value="10" selected="selected">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="button" id="sims-button"><b>Run</b></button>
+
+        <div class="progress-bar">
+            <div id="sims-progress-bar"></div>
+            <span id="nsims-progress-text">__ simulations</span>
+        </div>
+
+
+        <p>In <span id="nsims-text">100 simulations</span> of <span id="nshots-text">10</span> shots, the estimated
+            probability for
+            <span id="prob-equation-text">\(\text{Pr}(H\mid H^i)\)</span>, or the probability of \(H\) given <span
+                id="nhits-text">2 consecutive hits</span>, is <b><span id="prob-text">__</span></b>, even
+            though it should be <span id="true-prob-text">50%</span>.
+        </p>
+
+        <hr>
+
+        <p>
+            The takeaway from the error in measurement that Miller and Sanjurjo found is that the statistics for each
+            \(\text{Pr}(H\mid H^i)\) calculations were biased downwards (and \(\text{Pr}(H\mid M^i)\) upward), meaning
+            GVT were
+            underestimating the hot
+            hand effect. Correcting for the bias is relatively simple -- you just add back the amount of bias to the
+            original statistic. Actually calculating the amount of bias to add is considerably more difficult, since no
+            closed form solution exists for \(\text{Pr}(H\mid H^i)\) for \(i > 1\). Instead, to calculate the expected
+            proportion of made
+            shots, Miller and Sanjuro, in “<a
+                href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14943?casa_token=OA6QkR6r_aoAAAAA%3ALqBtnoyoWEQXEioiDV-OmVb9k6q6zEnCLc5L3_pf70MVT4ShthQYPRaau0Hp4aZL1Q3wtqZMGG3J2w"
+                target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers”</a>,
+            provide a recursive formula:
+        </p>
+
+        <div class="image-container">
+            <img src="images/appendix_e.png" style="border: 3px solid black;">
+            <p style="margin-top: 10px;">Appendix E of Miller and Sanjuro's paper, which describe the bias calculations.
+            </p>
+        </div>
+
+        <p> Following that pseudocode for calculating each of the \(\text{Pr}(H\mid H^i)\) probabilities for various
+            initial shooting
+            percentages and shot counts, I produce the following chart, which provides some further intuition behind the
+            measurement bias that was present in GVT’s paper, and my original analysis:
+        </p>
+
+        <div class="image-container">
+            <img src="images/bias_chart.png" style="border: 3px solid black;">
+            <p style="display: block; text-align: center;margin-top: 10px;">\(i\) is the length of consecutive hits that
+                the probability is conditioned on,
+                \(n\)
+                is the total number of shots a player attempts, and \(p\) represents a player’s unconditioned shooting
+                probability.
+            </p>
+        </div>
+
+        <p>This chart illustrates the magnitude of the bias, which is calculated as the difference between the “true”
+            (unconditioned) make probability and the “expected” make probability, conditioned on a number of consecutive
+            made shots. That gives the bias for \(\text{Pr}(H\mid H^i)\), and for \(\text{Pr}(H\mid M^i)\), the bias can
+            simply be calculated by
+            assuming the probability of a make is actually the probability of a miss. Notice how the difference between
+            “true” and “expected” probabilities can be as high as 10% for certain conditions, equivalent to the
+            difference between the best shooter on the Cornell men's team (Cooper Noard) and the worst shooter (DJ Nix)
+            with at least 75 shot attempts.</p>
+
+        <p>Following the bias calculations, Miller and Sanjurjo re-produced the analysis of the controlled experiment
+            that GVT ran on the Cornell men’s and women’s basketball teams. In GVT’s experiment, 26 players (14 men and
+            12 women) shot 100 shots at various distances to the basket, and the potential hot hand was measured as the
+            difference between each players’ \(\text{Pr}(H\mid H^3)\) and \(\text{Pr}(H\mid M^3)\). Miller and Sanjurjo
+            did the exact same calculations,
+            except they accounted for the fact that \(\text{Pr}(H\mid H^3)\) was underweighted and \(\text{Pr}(H\mid
+            M^3)\) overweighted. The result of
+            the adjusted experiment data was strong evidence in favor of the hot hand effect: there was an average of a
+            13% increase in shot make probability following three consecutive makes versus three consecutive misses. The
+            hot hand was real.</p>
+
+        <h3>The Truth</h3>
+
+        <p> Understanding the error in the original study begs the question: does accounting for bias change the hot
+            hand result for Cornell players’ field goal data in 2026? For each of the players and each conditional
+            probability included in Table 1, I calculate the amount of bias using the distributions described by Miller
+            and Sanjurjo. That adjustment results in the following table:
+        </p>
+
+        <div class="table">
+            <table>
+                <caption>Note: since the first shot of each game cannot be conditioned, the parenthetical values in
+                    columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon which
+                    each probability is based is given in parentheses.
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                        <th>P(hit|3 misses)</th>
+                        <th>P(hit|2 misses)</th>
+                        <th>P(hit| 1 miss)</th>
+                        <th>P(hit)</th>
+                        <th>P(hit|1 hit)</th>
+                        <th>P(hit| 2 hits)</th>
+                        <th>P(hit| 3 hits)</th>
+                        <th>Serial Correlation </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cooper Noard</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.49 (26)</td>
+                        <td>0.53 (67)</td>
+                        <td>0.52 (155)</td>
+                        <td>0.5 (346)</td>
+                        <td>0.46 (163)</td>
+                        <td>0.47 (69)</td>
+                        <td>0.41 (30)</td>
+                        <td>-0.077 </td>
+                    </tr>
+                    <tr>
+                        <td>Jake Fiegen</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.61 (24)</td>
+                        <td>0.45 (50)</td>
+                        <td>0.51 (111)</td>
+                        <td>0.55 (269)</td>
+                        <td>0.58 (134)</td>
+                        <td>0.56 (70)</td>
+                        <td>0.55 (37)</td>
+                        <td>0.082 </td>
+                    </tr>
+                    <tr>
+                        <td>Adam Hinton</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.71 (18)</td>
+                        <td>0.57 (49)</td>
+                        <td>0.54 (119)</td>
+                        <td>0.48 (259)</td>
+                        <td>0.45 (112)</td>
+                        <td>0.46 (42)</td>
+                        <td>0.55 (15)</td>
+                        <td>-0.066 </td>
+                    </tr>
+                    <tr>
+                        <td>Jacob Beccles</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>0.34 (11)</td>
+                        <td>0.38 (28)</td>
+                        <td>0.4 (70)</td>
+                        <td>0.47 (170)</td>
+                        <td>0.53 (72)</td>
+                        <td>0.51 (34)</td>
+                        <td>0.43 (15)</td>
+                        <td>0.114 </td>
+                    </tr>
+                    <tr>
+                        <td>Josh Baldwin</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>0.48 (10)</td>
+                        <td>0.45 (26)</td>
+                        <td>0.46 (63)</td>
+                        <td>0.45 (138)</td>
+                        <td>0.44 (50)</td>
+                        <td>0.43 (17)</td>
+                        <td>0.37 (6)</td>
+                        <td>-0.010 </td>
+                    </tr>
+                    <tr>
+                        <td>Emily Pape</td>
+                        <td>F</td>
+                        <td>SR</td>
+                        <td>0.41 (36)</td>
+                        <td>0.38 (79)</td>
+                        <td>0.39 (159)</td>
+                        <td>0.35 (283)</td>
+                        <td>0.29 (97)</td>
+                        <td>0.33 (28)</td>
+                        <td>0.36 (9)</td>
+                        <td>-0.085 </td>
+                    </tr>
+                    <tr>
+                        <td>Rachel Kaus</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>0.51 (31)</td>
+                        <td>0.43 (67)</td>
+                        <td>0.43 (138)</td>
+                        <td>0.44 (275)</td>
+                        <td>0.42 (110)</td>
+                        <td>0.35 (41)</td>
+                        <td>0.52 (10)</td>
+                        <td>-0.029 </td>
+                    </tr>
+                    <tr>
+                        <td>Clarke Jackson</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>0.57 (17)</td>
+                        <td>0.56 (48)</td>
+                        <td>0.45 (102)</td>
+                        <td>0.46 (227)</td>
+                        <td>0.48 (98)</td>
+                        <td>0.47 (45)</td>
+                        <td>0.47 (20)</td>
+                        <td>0.036 </td>
+                    </tr>
+                    <tr>
+                        <td>Paige Engels</td>
+                        <td>G</td>
+                        <td>SO</td>
+                        <td>0.49 (10)</td>
+                        <td>0.54 (31)</td>
+                        <td>0.41 (75)</td>
+                        <td>0.4 (160)</td>
+                        <td>0.33 (58)</td>
+                        <td>0.37 (17)</td>
+                        <td>0.24 (5)</td>
+                        <td>-0.114 </td>
+                    </tr>
+                    <tr>
+                        <td>Audrey Chen</td>
+                        <td>G</td>
+                        <td>SO</td>
+                        <td>0.3 (16)</td>
+                        <td>0.33 (30)</td>
+                        <td>0.35 (62)</td>
+                        <td>0.35 (118)</td>
+                        <td>0.36 (31)</td>
+                        <td>0.4 (8)</td>
+                        <td>1.07 (1)</td>
+                        <td>0.020 </td>
+                    </tr>
+                    <tr style="border-top: 2px solid black;">
+                        <td>Weighted Means</td>
+                        <td></td>
+                        <td></td>
+                        <td>0.50</td>
+                        <td>0.46</td>
+                        <td>0.45</td>
+                        <td>0.45</td>
+                        <td>0.45</td>
+                        <td>0.46</td>
+                        <td>0.47</td>
+                        <td>-0.019 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            Despite the inclusion of bias-corrected metrics, much of the results of Table 2 are similar to those in
+            Table 1. This similarity boils down to large sample sizes -- notice the expected probability distributions
+            approach their true value as the number of shots taken increases. Since all of the players in Table 2 have
+            over 118 shot attempts on the season, the bias that gets added is fairly low. As a result, the majority of
+            serial correlations remain negative, and none are significantly significant. The same paired t-tests that
+            were calculated on pairs of columns (\(\text{Pr}(H\mid H^i)\) versus \(\text{Pr}(H\mid M^i)\) for each value
+            of
+            \(i\)) in Table 1 yield
+            different, but still insignificant results that invalidate hot hand effects: tests for statistically
+            significant differences in means between columns four and ten, columns five and nine, and columns six and
+            eight, are all moot (\(t=-0.43, p=0.68\); \(t=-0.89, p=0.40\); and \(t=0.07, p=0.94\), respectively). Again,
+            the hot
+            hand appears to be non-existent. But if Miller and Sanjurjo were able to show that the hot hand was real in
+            their analysis, why does it not work here?
+        </p>
+
+        <p> It turns out Miller and Sanjurjo chose to analyze the controlled experiment data, rather than field goal
+            data, for a reason. In a normal game, from which field goal data would be taken from, the opposing team is
+            incentivized to take away whatever player might be displaying signs of a hot hand with defensive
+            adjustments, forcing players to take lower percentage shots. After all, the original GVT paper’s survey of
+            basketball fans showed 91% of basketball fans from two of the nation’s top universities believe in a form of
+            the hot hand. Regardless of whether or not the hot hand actually exists, to have such a potent belief among
+            fans likely means some players and coaches believe in it too, which influences their decision making.
+            Players, believing that they are truly “hot”, might opt for slightly worse shots (a concept aptly named a
+            “heat check”). This line of thinking was what led GVT to perform a controlled experiment in the first place
+            -- to “eliminate the effects of shot selection and defensive pressure” -- and is why Miller and Sanjurjo
+            made the experimental data the focal point of their paper. Even if the hot hand existed, it would be
+            invisible when analyzing in-game data.
+        </p>
+
+        <h3>The Other Way</h3>
+
+        <p> If the hot hand was real, then perhaps there would be some artifact of it within the field goal data that is
+            not conditional shooting probabilities. Each shot in the field goal dataset is accompanied by an X and Y
+            coordinate, representing the location where that shot was taken on the court. This measure of distance could
+            be used as a proxy for defensive adjustments and shot selection -- shots taken further from the basket might
+            represent tough defense or a difficult-to-make shot. If distance from the basket increased with more
+            consecutive made shots, that might be evidence of the hot hand effect, and how it causes in-game adjustments
+            from either players or coaches. Performing the same calculations, only switching shot make probability with
+            average distance to the basket, yields the following results:</p>
+
+
+        <div class="table">
+            <table>
+                <caption>Note: since the first shot of each game cannot be conditioned, the parenthetical values in
+                    columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon which
+                    each probability is based is given in parentheses.</caption>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Year</th>
+                        <th>Distance|3 misses</th>
+                        <th>Distance|2 misses</th>
+                        <th>Distance| 1 miss</th>
+                        <th>Distance</th>
+                        <th>Distance|1 hit</th>
+                        <th>Distance| 2 hits</th>
+                        <th>Distance| 3 hits </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cooper Noard</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>16.87 (26)</td>
+                        <td>15.77 (67)</td>
+                        <td>17.42 (155)</td>
+                        <td>17.78 (346)</td>
+                        <td>18.26 (163)</td>
+                        <td>16.84 (69)</td>
+                        <td>17.32 (30) </td>
+                    </tr>
+                    <tr>
+                        <td>Jake Fiegen</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>11.96 (24)</td>
+                        <td>13.36 (50)</td>
+                        <td>14.32 (111)</td>
+                        <td>14.89 (269)</td>
+                        <td>14.26 (134)</td>
+                        <td>15.12 (70)</td>
+                        <td>16.5 (37) </td>
+                    </tr>
+                    <tr>
+                        <td>Adam Hinton</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>10.45 (18)</td>
+                        <td>14.4 (49)</td>
+                        <td>14.68 (119)</td>
+                        <td>16.27 (259)</td>
+                        <td>17.78 (112)</td>
+                        <td>17.67 (42)</td>
+                        <td>17.53 (15) </td>
+                    </tr>
+                    <tr>
+                        <td>Jacob Beccles</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>8.2 (11)</td>
+                        <td>10.85 (28)</td>
+                        <td>11.75 (70)</td>
+                        <td>11.38 (170)</td>
+                        <td>11.62 (72)</td>
+                        <td>12.14 (34)</td>
+                        <td>10.87 (15) </td>
+                    </tr>
+                    <tr>
+                        <td>Josh Baldwin</td>
+                        <td>G</td>
+                        <td>SR</td>
+                        <td>13.88 (10)</td>
+                        <td>13.4 (26)</td>
+                        <td>11.46 (63)</td>
+                        <td>13.12 (138)</td>
+                        <td>14.6 (50)</td>
+                        <td>17.38 (17)</td>
+                        <td>14.67 (6) </td>
+                    </tr>
+                    <tr>
+                        <td>Emily Pape</td>
+                        <td>F</td>
+                        <td>SR</td>
+                        <td>17.88 (36)</td>
+                        <td>19.02 (79)</td>
+                        <td>18.76 (159)</td>
+                        <td>18.85 (283)</td>
+                        <td>19.2 (97)</td>
+                        <td>18.08 (28)</td>
+                        <td>16.74 (9) </td>
+                    </tr>
+                    <tr>
+                        <td>Rachel Kaus</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>9.82 (31)</td>
+                        <td>9.32 (67)</td>
+                        <td>8.48 (138)</td>
+                        <td>9.23 (275)</td>
+                        <td>10.45 (110)</td>
+                        <td>10.55 (41)</td>
+                        <td>9.26 (10) </td>
+                    </tr>
+                    <tr>
+                        <td>Clarke Jackson</td>
+                        <td>G</td>
+                        <td>JR</td>
+                        <td>8.78 (17)</td>
+                        <td>9.69 (48)</td>
+                        <td>9.35 (102)</td>
+                        <td>9.99 (227)</td>
+                        <td>10.39 (98)</td>
+                        <td>10.52 (45)</td>
+                        <td>10.08 (20) </td>
+                    </tr>
+                    <tr>
+                        <td>Paige Engels</td>
+                        <td>G</td>
+                        <td>SO</td>
+                        <td>11.5 (10)</td>
+                        <td>12.52 (31)</td>
+                        <td>13.19 (75)</td>
+                        <td>12.65 (160)</td>
+                        <td>12.39 (58)</td>
+                        <td>12.54 (17)</td>
+                        <td>8.56 (5) </td>
+                    </tr>
+                    <tr>
+                        <td>Audrey Chen</td>
+                        <td>G</td>
+                        <td>SO</td>
+                        <td>17.13 (16)</td>
+                        <td>18.92 (30)</td>
+                        <td>19.71 (62)</td>
+                        <td>18.81 (118)</td>
+                        <td>17.47 (31)</td>
+                        <td>18.73 (8)</td>
+                        <td>26.4 (1) </td>
+                    </tr>
+                    <tr style="border-top: 2px solid black;">
+                        <td>Weighted Means</td>
+                        <td></td>
+                        <td></td>
+                        <td>13.21</td>
+                        <td>13.96</td>
+                        <td>14.14</td>
+                        <td>14.48</td>
+                        <td>14.85</td>
+                        <td>14.68</td>
+                        <td>14.58 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Now, same paired t-tests for statistically significant differences in means between \(\text{(Distance}\mid
+            H^i)\) and
+            \(\text{(Distance}\mid M^i)\) now yield significant results, at least for the \(i = 2\) case (\(i=1, t=1.37,
+            p=0.21\); \(i=2, t=2.59,
+            p=0.03\); \(i=3, t=1.78, p=0.11\)). Also note how the last row of weighted means of distances increases as
+            you
+            condition on more consecutive made shots. The effect of those shots being taken further away from the basket
+            is that the probabilities of making them decrease, drowning out a possible hot hand. But the distances
+            themselves might be indicators that, at least in the minds of coaches and players, the hot hand effect is
+            real.
+        </p>
+
+        <h3>The End</h3>
+
+        <p>The truth is that while the distance metric shows some signs of being influenced by the hot hand, it is not
+            enough to fully prove that the hot hand exists. Distance is obviously not perfect: it does not take into
+            account something like the distance of the player to the nearest defender, or the body position from which
+            the player took the shot, both of which could make a shot more difficult. And while the results above are
+            promising, they are too weak to declare the existence of the hot hand. As one final effort to potentially
+            see the hot hand effect, I ran a fixed effects logistic regression for made shots, which indicates how much
+            of a predictor having made the last \(i\) shots is on whether a player makes the next one, controlling for
+            both
+            shot distance and player’s shot-making abilities. Within that model, each of the “last \(i\) shots made”
+            metrics
+            have negligible effects on shot outcomes.
+        </p>
+
+        <p>Beyond Cornell basketball, the existence of the hot hand in-game is still widely debated. The Miller and
+            Sanjurjo paper only proved its existence in controlled settings, but more <a
+                href="https://arxiv.org/abs/2010.15943" target="_blank">recent research</a> has shown that in
+            real NBA games, even when controlling for a much richer set of variables, the hot hand is unobserved.
+            Truthfully, trying to quantify something like shot difficulty is almost
+            impossible, which in turn makes quantifying the hot hand nearly hopeless. And while there might be clues of
+            the hot hand scattered within the data, for Cornell athletes, the mystery of the hot hand is still an open
+            case.</p>
+
+        <hr>
+    </div>
+
+    <div class="footer">
+        <p>Code for this project can be found in my <a href="https://github.com/nikhilc52/brsn_hot_hand">GitHub
+                repository.</a></p>
+        <p>All content written, coded, and arranged by <a href="https://nikhilchinchalkar.com/" target="_blank">
+                Nikhil Chinchalkar</a></p>
+        <p>Mar. 30, 2026</p>
+        <a href="https://nikhilchinchalkar.com/" target="_blank"><img
+                src="https://nikhilchinchalkar.com/web-assets/lotus.png"></a>
+    </div>
+</body>
+
+<script src="./build/coin_simulation.js"></script>
+
+</html>
