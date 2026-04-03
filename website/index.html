@@ -4,26 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Hand Mystery</title>
+    <title>The Hot Hand Mystery</title>
+    <meta name="description" content="In 1985, the 'hot hand' was first studied. Over 40 years layer, its story gets retold.">
+    <meta name="keywords" content="Hot Hand Mystery, Hot Hand Fallacy, Hot Hand Effect, Cornell, Big Red Sports Network">
+    <meta name="author" content="Nikhil Chinchalkar">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/doh4fbq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wgd4bgk.css">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
-
-    <!-- <link rel="icon" type="image/png" href="website/icon.png"> -->
+    <link rel="icon" type="image/png" href="images/icon.svg">
 </head>
 
 <body>
     <div class="header">
         <!-- <img src="website/header_deco_color.png"> -->
-        <h2>The Hot Hand Mystery</h2>
+        <h2><u style="text-decoration: underline #B31B1B 7px;">The Hot Hand Mystery</u></h2>
+        <h4>In 1985, the "hot hand" was first studied. Over 40 years layer, its story gets retold.</h4>
+        <hr style="margin: 15px auto 15px;">
         <h3>All content written, coded, and arranged by <a href="https://nikhilchinchalkar.com/" target="_blank">
                 Nikhil Chinchalkar</a></h3>
+
 
         <p>No Generative AI was used in the making of this project.</p>
         <p>Mar. 30, 2026</p>
     </div>
 
     <div class="essay">
+        <div class="image-container">
+            <img src="images/cards_hot.jpeg">
+            <p>Photos by Caroline Sherman (Cornell University Athletics)</p>
+        </div>
+
         <p class="end-paragraph">
             If you've ever watched basketball, you've probably heard the phrase "hot hand." It refers to the concept of
             an "athlete having streaks of success higher than their average performance," but more specific to
@@ -63,9 +73,8 @@
 
 
         <div class="image-container">
-            <!-- <img src="https://placehold.co/600x100"> -->
-            <img src="images/gvt_paper_quote_2.png" style="border: 3px solid black;">
-            <img src="images/gvt_paper_quote.png" style="border: 3px solid black;">
+            <img src="images/gvt_paper_quote_2.png" style="border: 2px solid black;">
+            <img src="images/gvt_paper_quote.png" style="border: 2px solid black;">
             <p style="margin-top: 10px;">Quotes from GVT's paper showing the hot hand as a fallacy.</p>
         </div>
 
@@ -132,13 +141,13 @@
                         <th>Player</th>
                         <th>Position</th>
                         <th>Year</th>
-                        <th>P(hit|3 misses)</th>
-                        <th>P(hit|2 misses)</th>
-                        <th>P(hit| 1 miss)</th>
+                        <th>P(hit \(\mid\) 3 misses)</th>
+                        <th>P(hit \(\mid\) 2 misses)</th>
+                        <th>P(hit \(\mid\) 1 miss)</th>
                         <th>P(hit)</th>
-                        <th>P(hit|1 hit)</th>
-                        <th>P(hit| 2 hits)</th>
-                        <th>P(hit| 3 hits)</th>
+                        <th>P(hit \(\mid\) 1 hit)</th>
+                        <th>P(hit \(\mid\) 2 hits)</th>
+                        <th>P(hit \(\mid\) 3 hits)</th>
                         <th>Serial Correlation </th>
                     </tr>
                 </thead>
@@ -450,13 +459,16 @@
                 target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers”</a>,
             provide a recursive formula:
         </p>
+    </div>
 
-        <div class="image-container">
-            <img src="images/appendix_e.png" style="border: 3px solid black;">
-            <p style="margin-top: 10px;">Appendix E of Miller and Sanjuro's paper, which describe the bias calculations.
-            </p>
-        </div>
+    <div class="big-image-container">
+        <img src="images/miller.png">
+        <p style="margin: 10px auto 30px;">Appendix E of Miller and Sanjuro's paper, which describe the bias
+            calculations.
+        </p>
+    </div>
 
+    <div class="essay">
         <p> Following that pseudocode for calculating each of the \(\text{Pr}(H\mid H^i)\) probabilities for various
             initial shooting
             percentages and shot counts, I produce the following chart, which provides some further intuition behind the
@@ -464,7 +476,7 @@
         </p>
 
         <div class="image-container">
-            <img src="images/bias_chart.png" style="border: 3px solid black;">
+            <img src="images/plot.svg">
             <p style="display: block; text-align: center;margin-top: 10px;">\(i\) is the length of consecutive hits that
                 the probability is conditioned on,
                 \(n\)
@@ -512,13 +524,13 @@
                         <th>Player</th>
                         <th>Position</th>
                         <th>Year</th>
-                        <th>P(hit|3 misses)</th>
-                        <th>P(hit|2 misses)</th>
-                        <th>P(hit| 1 miss)</th>
+                        <th>P(hit \(\mid\) 3 misses)</th>
+                        <th>P(hit \(\mid\) 2 misses)</th>
+                        <th>P(hit \(\mid\) 1 miss)</th>
                         <th>P(hit)</th>
-                        <th>P(hit|1 hit)</th>
-                        <th>P(hit| 2 hits)</th>
-                        <th>P(hit| 3 hits)</th>
+                        <th>P(hit \(\mid\) 1 hit)</th>
+                        <th>P(hit \(\mid\) 2 hits)</th>
+                        <th>P(hit \(\mid\) 3 hits)</th>
                         <th>Serial Correlation </th>
                     </tr>
                 </thead>
@@ -723,13 +735,13 @@
                         <th>Player</th>
                         <th>Position</th>
                         <th>Year</th>
-                        <th>Distance|3 misses</th>
-                        <th>Distance|2 misses</th>
-                        <th>Distance| 1 miss</th>
+                        <th>Distance \(\mid\) 3 misses</th>
+                        <th>Distance \(\mid\) 2 misses</th>
+                        <th>Distance \(\mid\) 1 miss</th>
                         <th>Distance</th>
-                        <th>Distance|1 hit</th>
-                        <th>Distance| 2 hits</th>
-                        <th>Distance| 3 hits </th>
+                        <th>Distance \(\mid\) 1 hit</th>
+                        <th>Distance \(\mid\) 2 hits</th>
+                        <th>Distance \(\mid\) 3 hits </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -909,7 +921,7 @@
     </div>
 
     <div class="footer">
-        <p>Code for this project can be found in my <a href="https://github.com/nikhilc52/brsn_hot_hand">GitHub
+        <p>Code for this project can be found in my <a href="https://github.com/nikhilc52/hot_hand">GitHub
                 repository.</a></p>
         <p>All content written, coded, and arranged by <a href="https://nikhilchinchalkar.com/" target="_blank">
                 Nikhil Chinchalkar</a></p>
