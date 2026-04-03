@@ -2,6 +2,18 @@
     /* border: 1px red solid; */
 }
 
+:root {
+    --black: #000000;
+    --darker-gray: #121212;
+    --dark-gray: #363636;
+    /*above is body text color*/
+    --gray: #727272;
+    --light-gray: #dfdfdf;
+    --lightest-gray: #f2f2f2;
+    --cornell-red: #B31B1B;
+    --cornell-blue: #006699;
+}
+
 @font-face {
     font-family: 'cmu_serifitalic';
     src: url('fonts/cmunti-webfont.woff') format('woff');
@@ -24,9 +36,10 @@
         font-weight: 400;
         font-style: italic;
         font-size: 80px;
-        color: #121212;
+        color: var(--darker-gray);
         text-align: center;
         margin: 20px;
+        text-decoration: underline var(--cornell-red) 7px;
     }
 
     h3 {
@@ -34,7 +47,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 15px;
-        color: #363636;
+        color: var(--dark-gray);
         margin: 0px 0px 10px;
     }
 
@@ -43,7 +56,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 22px;
-        color: #363636;
+        color: var(--dark-gray);
         margin: 0px;
     }
 
@@ -53,17 +66,7 @@
         font-style: normal;
         font-size: 10px;
         margin: 1px;
-        color: #727272;
-    }
-
-    img {
-        z-index: -1;
-        position: absolute;
-        width: 80%;
-        height: auto;
-        top: -5vw;
-        left: 50%;
-        transform: translateX(-50%);
+        color: var(--gray);
     }
 }
 
@@ -79,7 +82,7 @@
         font-weight: 700;
         font-style: normal;
         font-size: 26px;
-        color: #121212;
+        color: var(--darker-gray);
         margin: 35px 0px 20px 0px;
     }
 
@@ -89,60 +92,22 @@
         font-style: normal;
         font-size: 22px;
         margin: 0px 0px 15px 0px;
-        color: #363636;
+        color: var(--dark-gray);
         line-height: 30px;
     }
 
     .end-paragraph {
         margin: 0px;
     }
-
-    ul,
-    ol {
-        font-family: "nimbus-roman", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 22px;
-        padding-left: 22px;
-        color: #363636;
-        margin: 0px 0px 15px 0px;
-
-        li {
-            margin: 0px 0px 15px 0px;
-        }
-    }
-
-    blockquote {
-        font-family: "nimbus-roman", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 22px;
-        color: #363636;
-        margin-left: 15px;
-        padding-left: 15px;
-        border-left: #dfdfdf 2px solid;
-    }
-
-    .highlight {
-        background-image: url(../../images/highlight.svg);
-        background-size: 0% auto;
-        background-repeat: no-repeat;
-
-        transition: background-size 1.5s ease-in-out;
-    }
-
-    .highlight-animation {
-        background-size: 100% auto;
-    }
 }
 
 a {
     color: inherit;
-    text-decoration: underline #B31B1B 2.5px;
+    text-decoration: underline var(--cornell-blue) 2.5px;
 }
 
 hr {
-    border: 1px solid #dfdfdf;
+    border: 1px solid var(--light-gray);
     width: 100%;
     margin: 25px auto 25px;
 }
@@ -182,7 +147,7 @@ hr {
         caption {
             margin: 2px;
             text-align: left;
-            color: #363636;
+            color: var(--gray);
             line-height: 18px;
             margin-bottom: 15px;
             font-size: 12px;
@@ -199,7 +164,7 @@ hr {
         font-size: 15px;
         display: flex;
         justify-content: center;
-        color: #727272;
+        color: var(--gray);
         line-height: 18px;
     }
 
@@ -219,7 +184,7 @@ hr {
         width: 1200px;
         max-width: 90vw;
         margin: auto;
-        color: #727272;
+        color: var(--gray);
     }
 
     img {
@@ -248,8 +213,7 @@ hr {
     align-items: center;
     max-width: 85%;
 
-    font-family: "franklin-gothic-std",
-        sans-serif;
+    font-family: "franklin-gothic-std", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -282,7 +246,6 @@ hr {
         width: 25%;
         display: flex;
         flex-direction: column;
-        display: flex;
         align-items: center;
         justify-content: space-between;
     }
@@ -317,7 +280,7 @@ hr {
     padding-left: 10px;
     padding-right: 10px;
     margin: 15px auto 15px;
-    background-color: #f2f2f2;
+    background-color: var(--lightest-gray);
     border-radius: 50px;
     cursor: pointer;
     font-family: "franklin-gothic-std", sans-serif;
@@ -338,7 +301,7 @@ hr {
 }
 
 #sims-progress-bar {
-    background-color: #727272;
+    background-color: var(--gray);
     height: 4px;
     border-radius: 5px;
     margin-bottom: 5px;
