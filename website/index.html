@@ -302,7 +302,7 @@
         <p>Table 1 shows the results of the described calculations: the first three columns list information about the
             players, columns four through ten display conditional probabilities, and the last column shows the
             aforementioned serial correlation. While the hot hand would indicate a strong, positive serial correlation
-            correlation, more than half of the players’ correlations are negative. As a measure of strength, I can test
+            coefficient, more than half of the players’ correlations are negative. As a measure of strength, I can test
             the statistical significance of column ten, which is a way of assessing how unlikely a particular statistic
             is. In the context of serial correlations, a test of statistical significance answers the question: “if a
             player truly did not have any correlation between \(\text{Pr}(H)\) and \(\text{Pr}(H\mid H^1)\), how likely
@@ -376,7 +376,7 @@
             consecutive prior hits.</p>
 
         <p> If you are not convinced, consider the below simulation, which performs the described conditional
-            probability calculations for \(\text{Pr}(H\mid H^3)\) on a selected number of generations of 10 consecutive
+            probability calculations for \(\text{Pr}(H\mid H^i)\) on a selected number of generations of n consecutive
             shots from our
             fictitious, no-hot-hand player.</p>
 
@@ -428,7 +428,7 @@
             </div>
         </div>
 
-        <button type="submit" class="button" id="sims-button"><b>Run</b></button>
+        <button type="submit" class="button" id="sims-button">Run</button>
 
         <div class="progress-bar">
             <div id="sims-progress-bar"></div>
@@ -454,7 +454,7 @@
             original statistic. Actually calculating the amount of bias to add is considerably more difficult, since no
             closed form solution exists for \(\text{Pr}(H\mid H^i)\) for \(i > 1\). Instead, to calculate the expected
             proportion of made
-            shots, Miller and Sanjuro, in “<a
+            shots, Miller and Sanjurjo, in “<a
                 href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14943?casa_token=OA6QkR6r_aoAAAAA%3ALqBtnoyoWEQXEioiDV-OmVb9k6q6zEnCLc5L3_pf70MVT4ShthQYPRaau0Hp4aZL1Q3wtqZMGG3J2w"
                 target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers”</a>,
             provide a recursive formula:
@@ -463,7 +463,7 @@
 
     <div class="big-image-container">
         <img src="images/miller.png">
-        <p style="margin: 10px auto 30px;">Appendix E of Miller and Sanjuro's paper, which describe the bias
+        <p style="margin: 10px auto 30px;">Appendix E of Miller and Sanjurjo's paper, which describe the bias
             calculations.
         </p>
     </div>
@@ -687,7 +687,7 @@
             Table 1. This similarity boils down to large sample sizes -- notice the expected probability distributions
             approach their true value as the number of shots taken increases. Since all of the players in Table 2 have
             over 118 shot attempts on the season, the bias that gets added is fairly low. As a result, the majority of
-            serial correlations remain negative, and none are significantly significant. The same paired t-tests that
+            serial correlations remain negative, and none are statistically significant. The same paired t-tests that
             were calculated on pairs of columns (\(\text{Pr}(H\mid H^i)\) versus \(\text{Pr}(H\mid M^i)\) for each value
             of
             \(i\)) in Table 1 yield
@@ -706,7 +706,7 @@
             basketball fans showed 91% of basketball fans from two of the nation’s top universities believe in a form of
             the hot hand. Regardless of whether or not the hot hand actually exists, to have such a potent belief among
             fans likely means some players and coaches believe in it too, which influences their decision making.
-            Players, believing that they are truly “hot”, might opt for slightly worse shots (a concept aptly named a
+            Players, believing that they are truly “hot”, might opt for slightly worse shots (the aforementioned
             “heat check”). This line of thinking was what led GVT to perform a controlled experiment in the first place
             -- to “eliminate the effects of shot selection and defensive pressure” -- and is why Miller and Sanjurjo
             made the experimental data the focal point of their paper. Even if the hot hand existed, it would be
