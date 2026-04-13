@@ -9,7 +9,7 @@ If you've ever watched basketball, you've probably heard the phrase "hot hand." 
 - Joshua Miller and Adam Sanjurjo: ["Surprised by the hot hand fallacy? A truth in the law of small numbers."](https://onlinelibrary.wiley.com/doi/pdf/10.3982/ECTA14943)
   - This paper describes the error within the original GVT study, and how to re-calculate the hot hand effect accordingly
 - [Momentum isn’t magic – vindicating the hot hand with the mathematics of streaks (Joshua Miller and Adam Sanjurjo).](https://theconversation.com/momentum-isnt-magic-vindicating-the-hot-hand-with-the-mathematics-of-streaks-74786)
-  - An article that describes the bias described in the Miller and Sanjurjo paper in more conversational terms, which I borrowed from in my article
+  - An article that explains the bias described in the Miller and Sanjurjo paper in more conversational terms, which I borrowed from in my article
 - ESPN API
   - The API behind ESPN's in-game data, which I used to obtain the data I analyzed 
 
@@ -23,13 +23,13 @@ If you've ever watched basketball, you've probably heard the phrase "hot hand." 
 - **TypeScript**
   - I used TypeScript to build the simulation for the measurement bias. 
 - **Adobe Illustrator**
-  - I used AE to generate most of the images found within the article. The plot built in R was also passed through AE to include special fonts and styling options.
+  - I used Illustrator to generate most of the images found within the article. The plot built in R was also passed through Illustrator to include special fonts and styling options.
 - **LaTeXMathML.js**
   - A helpful library I used to implement LaTeX rendering of math equations used in article.
 - **Excel**
   - Miscellaneous data processing and cleaning, as well as formatting each of the tables within the article.
 - **HTML, CSS**
-  - Creating the website to display the article, including some interactive elements.
+  - I used HTML and CSS to make the website, including some interactive elements.
 
 ---
 
