@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Hot Hand Mystery</title>
-    <meta name="description" content="In 1985, the 'hot hand' was first studied. Over 40 years layer, its story gets retold.">
-    <meta name="keywords" content="Hot Hand Mystery, Hot Hand Fallacy, Hot Hand Effect, Cornell, Big Red Sports Network">
+    <meta name="description"
+        content="In 1985, the 'hot hand' was first studied. Over 40 years layer, its story gets retold.">
+    <meta name="keywords"
+        content="Hot Hand Mystery, Hot Hand Fallacy, Hot Hand Effect, Cornell, Big Red Sports Network">
     <meta name="author" content="Nikhil Chinchalkar">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/wgd4bgk.css">
@@ -16,7 +18,6 @@
 
 <body>
     <div class="header">
-        <!-- <img src="website/header_deco_color.png"> -->
         <h2>The Hot Hand Mystery</h2>
         <h4>In 1985, the "hot hand" was first studied. Over 40 years layer, its story gets retold.</h4>
         <hr style="margin: 15px auto 15px;">
@@ -30,7 +31,7 @@
 
     <div class="essay">
         <div class="image-container">
-            <img src="images/cards_hot.jpeg">
+            <img src="images/webp/cards_hot.webp">
             <p>Photos by Caroline Sherman (Cornell University Athletics)</p>
         </div>
 
@@ -38,9 +39,8 @@
             If you've ever watched basketball, you've probably heard the phrase "hot hand." It refers to the concept of
             an "athlete having streaks of success higher than their average performance," but more specific to
             basketball, it says that if a person made (or missed) their last shot, they are more likely to make (or
-            miss) the next one. There's some controversy as to whether or not this trend actually exists, and hence the
-            "hot hand" phrase is typically accompanied by either a "phenomenon" or "fallacy" suffix, depending on one's
-            beliefs.
+            miss) the next one. The debate around whether or not the hot hand is a real "effect", or just a "fallacy"
+            has been going on for over 40 years.
         </p>
 
         <h3>The Background</h3>
@@ -51,75 +51,65 @@
             professor <a href="https://en.wikipedia.org/wiki/Thomas_Gilovich" target="_blank">Thomas Gilovich</a>,
             alongside famed behavioral economist <a href="https://en.wikipedia.org/wiki/Amos_Tversky"
                 target="_blank">Amos Tversky</a>, and Stanford professor Robert
-            Vallone. I’ll refer to the collective as GTV, an acronym of their last names, from this point forward. In
+            Vallone. I'll refer to the collective as GTV, an acronym of their last names, from this point forward. In
             the paper, GTV conduct surveys with hundreds of basketball fans from both Cornell and Stanford University to
-            demonstrate how widespread the belief in the “hot hand” actually was. 91% of responders believe that a
-            player has “a better chance of making a shot after having just <i>made</i> his last two or three shots than
+            demonstrate how widespread the belief in the "hot hand" actually was. 91% of responders believe that a
+            player has "a better chance of making a shot after having just <i>made</i> his last two or three shots than
             he does
-            after having just <i>missed</i> his last two or three shots”. Such beliefs influence play: teammates may
+            after having just <i>missed</i> his last two or three shots". Such beliefs influence play: teammates may
             pass the
-            ball to a player who has a believed “hot hand” just as a defending team may guard this player with slightly
-            more concentration. Moreover, the player may end up taking worse shots if they believe that they are “hot”
-            -- a phrase now known as a “heat check”. Clearly, understanding the “hot hand” is a fundamentally important
-            task.
+            ball to a player who has a believed "hot hand" just as a defending team may guard this player with slightly
+            more concentration. Moreover, the player may end up taking worse shots if they believe that they are "hot"
+            -- a phrase now known as a "heat check".
         </p>
 
-        <p>GTV assess this potential streakiness of basketball players’ shots through three methods: analyzing (1) the
+        <p>GTV assess this potential streakiness of basketball players' shots through three methods: analyzing (1) the
             field goal records of 48 home games played by the Philadelphia 76ers in 1980-81, (2) pairs of free throw
             shots by Boston Celtics players in both the 1980-81 and 1981-82 seasons, and (3) results of a controlled
-            experiment involving a combined 26 players from Cornell men’s and women’s basketball teams. In all three
+            experiment involving a combined 26 players from Cornell men's and women's basketball teams. In all three
             cases, the results of GTV showed a lack of any evidence of streakiness in basketball, at both professional
-            and collegiate levels. They proved the hot hand does not exist -- it was a fallacy.</p>
+            and collegiate levels. They proved the hot hand was a fallacy.</p>
 
 
         <div class="image-container">
-            <img src="images/gvt_paper_quote_2.png" style="border: 2px solid black;">
-            <img src="images/gvt_paper_quote.png" style="border: 2px solid black;">
+            <img src="images/webp/gvt_paper_quote.webp" style="border: 2px solid black;">
+            <img src="images/webp/gvt_paper_quote_2.webp" style="border: 2px solid black;">
             <p style="margin-top: 10px;">Quotes from GVT's paper showing the hot hand as a fallacy.</p>
         </div>
 
-        <p class="end-paragraph">Over 40 years removed from the study’s original publication date, basketball has
+        <p class="end-paragraph">Over 40 years removed from the study's original publication date, basketball has
             changed dramatically. At all
             levels, the game is played with high scoring, on account of faster pace. Players are bigger, faster, and
             stronger. Teams are significantly more invested in analytics than before. A question arises: do any of those
-            changes affect the results shown in GVT’s breakthrough paper?
+            changes affect the results shown in GVT's breakthrough paper?
         </p>
 
         <h3>The Setup</h3>
 
-        <p>To re-evaluate the hot hand fallacy through the lens of GVT, I reproduced the same exact analysis they
-            conducted for the Philadelphia 76ers’ field goal data in the 1980 NBA season, using the Cornell University
-            men’s and women’s basketball teams’ shot chart data for the 2025-26 season. Within the data, the hot hand
+        <p class="end-paragraph">To re-evaluate the hot hand fallacy through the lens of GVT, I reproduced the same
+            exact analysis they
+            conducted for the Philadelphia 76ers' field goal data in the 1980 NBA season, using the Cornell University
+            men's and women's basketball teams' shot chart data for the 2025-26 season. Within the data, the hot hand
             boils down to conditional probability, and the relationship between three key variables:
             \(\text{Pr}(H\mid M^i)\), \(\text{Pr}(H\mid H^i)\)
-            and \(\text{Pr}(H)\). Here, \(H\) corresponds to a “hit”, or a basket successfully scored, and \(M\)
+            and \(\text{Pr}(H)\). Here, \(H\) corresponds to a "hit", or a basket successfully scored, and \(M\)
             indicates a missed
             shot. I also expand the notation using the superscript \(i\) to indicate a sequence of prior hits or misses.
             So, the probability notation \(\text{Pr}(H\mid M^2)\) signifies the probability (\(\text{Pr}\)) of a player
             hitting a shot (\(H\))
-            given (\(\mid\)) that they missed (\(M\)) the previous two shots. For instance, If the hot hand were to
+            given (\(\mid\)) that they missed (\(M\)) the previous two shots. If the hot hand were to
             exist, then we would expect \(\text{Pr}(H\mid M^i) < \text{Pr}(H) < \text{Pr}(H\mid H^i)\), or that the
                 probability of hitting a shot is higher if you just hit a shot than the probability of hitting a shot
                 without any prior knowledge, which is higher than the probability of hitting a shot if you just missed a
                 shot.</p>
         </p>
 
-        <p class="end-paragraph">
-            Regardless of the nuances of the probability notation, the actual calculation of those numbers (and
-            other conditional probabilities) is fairly straightforward. From the list of field goal attempts
-            Cornell players took during the 2025-26 season, I first group the list by each player, then each
-            game, and note whether the last shot, the shot before that, and the shot before that were hits or
-            misses. Each \(\text{Pr}(H\mid M^i)\) (and \(\text{Pr}(H\mid H^i)\)) calculation amounts to
-            filtering to instances where a player
-            had just missed (or hit) the last \(i\) shots in a row, then calculating their shooting percentage
-            under those conditions.
-        </p>
-
         <h3>The Results</h3>
 
         <p>Narrowing down the data to only include males and females with substantial shooting volume (players
             that attempted over 100 shots throughout the season) left 10 remaining athletes. For each of these
-            players, I also calculated the (serial) correlation between the probability of making a shot (in
+            players, I also calculated the <a href="https://en.wikipedia.org/wiki/Autocorrelation"
+                target="_blank">serial correlation</a> between the probability of making a shot (in
             general) and the probability of making a shot given that the player had just made a shot. The serial
             correlation coefficient \(p\) takes on values between -1 and 1, with a \(p > 0\) indicating
             \(\text{Pr}(H)\) and
@@ -302,27 +292,33 @@
         <p>Table 1 shows the results of the described calculations: the first three columns list information about the
             players, columns four through ten display conditional probabilities, and the last column shows the
             aforementioned serial correlation. While the hot hand would indicate a strong, positive serial correlation
-            coefficient, more than half of the players’ correlations are negative. As a measure of strength, I can test
-            the statistical significance of column ten, which is a way of assessing how unlikely a particular statistic
-            is. In the context of serial correlations, a test of statistical significance answers the question: “if a
+            coefficient, more than half of the players' correlations are negative. As a measure of strength, I can test
+            the <a href="https://en.wikipedia.org/wiki/Statistical_significance" target="_blank">statistical
+                significance</a> of column ten, which is a way of assessing how <i>unlikely</i> a particular
+            statistic
+            is. In the context of serial correlations, a test of statistical significance answers the question: "if a
             player truly did not have any correlation between \(\text{Pr}(H)\) and \(\text{Pr}(H\mid H^1)\), how likely
             is it to see the result I
-            saw?”. If it was very unlikely to see the actual result (with probability less than 5%), then the result is
+            saw?". If it was very unlikely to see the actual result (with probability less than 5%), then the result is
             statistically significant (and strong). Over all ten players, none of the serial correlations are
             statistically significant. </p>
 
         <p>An effect might be present among the remaining columns, and statistical significance can be measured with
-            paired t-tests for significant differences in the means between columns four and ten, columns five and nine,
+            <a href="https://en.wikipedia.org/wiki/Paired_difference_test" target="_blank">paired t-tests</a> for
+            significant differences in the means between columns four and ten, columns five and nine,
             and columns six and eight. Each of those tests fails to produce evidence in favor of the hot hand: each
             difference between \(\text{Pr}(H\mid H^i)\) and \(\text{Pr}(H\mid M^i)\) is negative (and insignificant),
             meaning players tend to have
-            slightly worse shooting outcomes when conditioning on consecutive hits versus consecutive misses (\(t=-1.10,
+            slightly <i>worse</i> shooting outcomes when conditioning on consecutive hits versus consecutive misses
+            (\(t=-1.10,
             p=0.30\) for columns six and eight, \(t=-1.78, p=0.11\) for columns five and nine, and \(t=-0.62, p=0.55\)
             for columns
             four and ten). Outside of the statistical tests, simple observation of the final row of the table, the
-            weighted means, shows that conditioning on more makes actually decreases the probability that a player hits
+            weighted means, shows that conditioning on more makes actually <i>decreases</i> the probability that a
+            player hits
             the next shot. No matter which way you slice it, for Cornell players, the hot hand effect does not exist --
-            the same result that GVT got 40 years ago with their 76ers analysis. </p>
+            the same result that GVT got 40 years ago with their 76ers analysis.
+        </p>
 
         <p class="end-paragraph">I have not given you the full story, though. In 2018, 33 years after the GVT paper was
             published, two
@@ -349,19 +345,21 @@
             chose one at random and looked at the outcome of the subsequent shot (the \(\rule{.5cm}{0.15mm}\) in the
             above
             sequence) you
-            should expect the probability of observing an \(H\) to be exactly 50%: after all, the truly fictitious
+            should expect the probability of observing an \(H\) to be exactly 50%: after all, the fictitious
             player
-            does not have a hot hand. But that probability is not exactly 50%, it is actually slightly below.
+            truly does not have a hot hand. But that probability is not exactly 50%, it is actually slightly below.
         </p>
 
         <p> Consider the random selection of a sequence out of all the filtered substrings in the bucket. Imagine that
             selection was \(HHH \rule{.5cm}{0.15mm} \), with the first \(H\) being the 10th shot in the sequence. If the
             sequence was \(HHHH\), you
-            would actually have another \(HHH \rule{.5cm}{0.15mm} \) sequence, this time starting from the 11th shot in
+            would actually have <i>another</i> \(HHH \rule{.5cm}{0.15mm} \) sequence, this time starting from the 11th
+            shot in
             the sequence, and you
-            would add this other sequence into the filtered substring bucket. But if the selection was actually
+            would add this <i>other</i> sequence into the filtered substring bucket. But if the selection was actually
             \(HHHM\),
-            that other sequence would not exist -- the bucket would remain the same size. That means if the sequence
+            that <i>other</i> sequence would not exist -- the bucket would remain the same size. That means if the
+            sequence
             were actually \(HHHH\), the probability of selecting that sequence would be slightly lower than the
             probability
             of selecting the sequence at the same position had it been \(HHHM\) (since the \(HHHH\) case would add
@@ -454,15 +452,15 @@
             original statistic. Actually calculating the amount of bias to add is considerably more difficult, since no
             closed form solution exists for \(\text{Pr}(H\mid H^i)\) for \(i > 1\). Instead, to calculate the expected
             proportion of made
-            shots, Miller and Sanjurjo, in “<a
+            shots, Miller and Sanjurjo, in "<a
                 href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14943?casa_token=OA6QkR6r_aoAAAAA%3ALqBtnoyoWEQXEioiDV-OmVb9k6q6zEnCLc5L3_pf70MVT4ShthQYPRaau0Hp4aZL1Q3wtqZMGG3J2w"
-                target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers”</a>,
+                target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers"</a>,
             provide a recursive formula:
         </p>
     </div>
 
     <div class="big-image-container">
-        <img src="images/miller.png">
+        <img src="images/webp/miller.webp">
         <p style="margin: 10px auto 30px;">Appendix E of Miller and Sanjurjo's paper, which describe the bias
             calculations.
         </p>
@@ -472,7 +470,7 @@
         <p> Following that pseudocode for calculating each of the \(\text{Pr}(H\mid H^i)\) probabilities for various
             initial shooting
             percentages and shot counts, I produce the following chart, which provides some further intuition behind the
-            measurement bias that was present in GVT’s paper, and my original analysis:
+            measurement bias that was present in GVT's paper, and my original analysis:
         </p>
 
         <div class="image-container">
@@ -480,24 +478,24 @@
             <p style="display: block; text-align: center;margin-top: 10px;">\(i\) is the length of consecutive hits that
                 the probability is conditioned on,
                 \(n\)
-                is the total number of shots a player attempts, and \(p\) represents a player’s unconditioned shooting
+                is the total number of shots a player attempts, and \(p\) represents a player's unconditioned shooting
                 probability.
             </p>
         </div>
 
-        <p>This chart illustrates the magnitude of the bias, which is calculated as the difference between the “true”
-            (unconditioned) make probability and the “expected” make probability, conditioned on a number of consecutive
+        <p>This chart illustrates the magnitude of the bias, which is calculated as the difference between the "true"
+            (unconditioned) make probability and the "expected" make probability, conditioned on a number of consecutive
             made shots. That gives the bias for \(\text{Pr}(H\mid H^i)\), and for \(\text{Pr}(H\mid M^i)\), the bias can
             simply be calculated by
             assuming the probability of a make is actually the probability of a miss. Notice how the difference between
-            “true” and “expected” probabilities can be as high as 10% for certain conditions, equivalent to the
+            "true" and "expected" probabilities can be as high as 10% for certain conditions, equivalent to the
             difference between the best shooter on the Cornell men's team (Cooper Noard) and the worst shooter (DJ Nix)
             with at least 75 shot attempts.</p>
 
         <p>Following the bias calculations, Miller and Sanjurjo re-produced the analysis of the controlled experiment
-            that GVT ran on the Cornell men’s and women’s basketball teams. In GVT’s experiment, 26 players (14 men and
+            that GVT ran on the Cornell men's and women's basketball teams. In GVT's experiment, 26 players (14 men and
             12 women) shot 100 shots at various distances to the basket, and the potential hot hand was measured as the
-            difference between each players’ \(\text{Pr}(H\mid H^3)\) and \(\text{Pr}(H\mid M^3)\). Miller and Sanjurjo
+            difference between each players' \(\text{Pr}(H\mid H^3)\) and \(\text{Pr}(H\mid M^3)\). Miller and Sanjurjo
             did the exact same calculations,
             except they accounted for the fact that \(\text{Pr}(H\mid H^3)\) was underweighted and \(\text{Pr}(H\mid
             M^3)\) overweighted. The result of
@@ -508,7 +506,7 @@
         <h3>The Truth</h3>
 
         <p> Understanding the error in the original study begs the question: does accounting for bias change the hot
-            hand result for Cornell players’ field goal data in 2026? For each of the players and each conditional
+            hand result for Cornell players' field goal data in 2026? For each of the players and each conditional
             probability included in Table 1, I calculate the amount of bias using the distributions described by Miller
             and Sanjurjo. That adjustment results in the following table:
         </p>
@@ -702,13 +700,12 @@
         <p> It turns out Miller and Sanjurjo chose to analyze the controlled experiment data, rather than field goal
             data, for a reason. In a normal game, from which field goal data would be taken from, the opposing team is
             incentivized to take away whatever player might be displaying signs of a hot hand with defensive
-            adjustments, forcing players to take lower percentage shots. After all, the original GVT paper’s survey of
-            basketball fans showed 91% of basketball fans from two of the nation’s top universities believe in a form of
+            adjustments, forcing players to take lower percentage shots. After all, the original GVT paper's survey of
+            basketball fans showed 91% of fans from two of the nation's top universities believe in a form of
             the hot hand. Regardless of whether or not the hot hand actually exists, to have such a potent belief among
-            fans likely means some players and coaches believe in it too, which influences their decision making.
-            Players, believing that they are truly “hot”, might opt for slightly worse shots (the aforementioned
-            “heat check”). This line of thinking was what led GVT to perform a controlled experiment in the first place
-            -- to “eliminate the effects of shot selection and defensive pressure” -- and is why Miller and Sanjurjo
+            fans likely means some players and coaches believe in it too, which influences their decision making. This
+            line of thinking was what led GVT to perform a controlled experiment in the first place
+            -- to "eliminate the effects of shot selection and defensive pressure" -- and is why Miller and Sanjurjo
             made the experimental data the focal point of their paper. Even if the hot hand existed, it would be
             invisible when analyzing in-game data.
         </p>
@@ -719,7 +716,7 @@
             not conditional shooting probabilities. Each shot in the field goal dataset is accompanied by an X and Y
             coordinate, representing the location where that shot was taken on the court. This measure of distance could
             be used as a proxy for defensive adjustments and shot selection -- shots taken further from the basket might
-            represent tough defense or a difficult-to-make shot. If distance from the basket increased with more
+            represent tough defense or a difficult-to-make shot. If distance from the basket <i>increased</i> with more
             consecutive made shots, that might be evidence of the hot hand effect, and how it causes in-game adjustments
             from either players or coaches. Performing the same calculations, only switching shot make probability with
             average distance to the basket, yields the following results:</p>
@@ -881,15 +878,17 @@
             </table>
         </div>
 
-        <p>Now, same paired t-tests for statistically significant differences in means between \(\text{(Distance}\mid
+        <p>Now, the same paired t-tests for statistically significant differences in means between
+            \(\text{(Distance}\mid
             H^i)\) and
-            \(\text{(Distance}\mid M^i)\) now yield significant results, at least for the \(i = 2\) case (\(i=1, t=1.37,
+            \(\text{(Distance}\mid M^i)\) yield significant results, at least for the \(i = 2\) case (\(i=1, t=1.37,
             p=0.21\); \(i=2, t=2.59,
             p=0.03\); \(i=3, t=1.78, p=0.11\)). Also note how the last row of weighted means of distances increases as
             you
             condition on more consecutive made shots. The effect of those shots being taken further away from the basket
             is that the probabilities of making them decrease, drowning out a possible hot hand. But the distances
-            themselves might be indicators that, at least in the minds of coaches and players, the hot hand effect is
+            <i>themselves</i> might be indicators that, at least in the minds of coaches and players, the hot hand
+            effect is
             real.
         </p>
 
@@ -900,12 +899,16 @@
             account something like the distance of the player to the nearest defender, or the body position from which
             the player took the shot, both of which could make a shot more difficult. And while the results above are
             promising, they are too weak to declare the existence of the hot hand. As one final effort to potentially
-            see the hot hand effect, I ran a fixed effects logistic regression for made shots, which indicates how much
-            of a predictor having made the last \(i\) shots is on whether a player makes the next one, controlling for
+            see the hot hand effect, I ran a <a href="https://en.wikipedia.org/wiki/Fixed_effects_model"
+                target="_blank">fixed effects</a> <a href="https://en.wikipedia.org/wiki/Logistic_regression"
+                target="_blank">logistic regression</a> for made shots, which indicates how much
+            of a predictor having made the last \(i\) shots is on whether a player makes the next one, controlling
+            for
             both
-            shot distance and player’s shot-making abilities. Within that model, each of the “last \(i\) shots made”
+            shot distance and player's shot-making abilities. Within that model, each of the "last \(i\) shots made"
             metrics
-            have negligible effects on shot outcomes.
+            have <a href="https://github.com/nikhilc52/hot_hand/blob/master/analysis/analysis.ipynb"
+                target="_blank">negligible effects</a> on shot outcomes.
         </p>
 
         <p>Beyond Cornell basketball, the existence of the hot hand in-game is still widely debated. The Miller and
@@ -926,8 +929,7 @@
         <p>All content written, coded, and arranged by <a href="https://nikhilchinchalkar.com/" target="_blank">
                 Nikhil Chinchalkar</a></p>
         <p>Mar. 30, 2026</p>
-        <a href="https://nikhilchinchalkar.com/" target="_blank"><img
-                src="https://nikhilchinchalkar.com/web-assets/lotus.png"></a>
+        <a href="https://nikhilchinchalkar.com/" target="_blank"><img src="images/webp/lotus.webp"></a>
     </div>
 </body>
 
