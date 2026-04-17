@@ -208,7 +208,7 @@ hr {
 }
 
 .footer {
-    color: var(--darker-gray);
+    color: var(--dark-gray);
     display: flex;
     flex-direction: column;
     margin: auto;

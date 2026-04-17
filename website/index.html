@@ -26,7 +26,7 @@
 
 
         <p>No Generative AI was used in the making of this project.</p>
-        <p>Mar. 30, 2026</p>
+        <p>Apr. 16, 2026</p>
     </div>
 
     <div class="essay">
@@ -39,7 +39,7 @@
             If you've ever watched basketball, you've probably heard the phrase "hot hand." It refers to the concept of
             an "athlete having streaks of success higher than their average performance," but more specific to
             basketball, it says that if a person made (or missed) their last shot, they are more likely to make (or
-            miss) the next one. The debate around whether or not the hot hand is a real "effect", or just a "fallacy"
+            miss) the next one. The debate around whether or not the hot hand is a real "effect," or just a "fallacy"
             has been going on for over 40 years.
         </p>
 
@@ -56,11 +56,11 @@
             demonstrate how widespread the belief in the "hot hand" actually was. 91% of responders believe that a
             player has "a better chance of making a shot after having just <i>made</i> his last two or three shots than
             he does
-            after having just <i>missed</i> his last two or three shots". Such beliefs influence play: teammates may
+            after having just <i>missed</i> his last two or three shots." Such beliefs influence play: teammates may
             pass the
             ball to a player who has a believed "hot hand" just as a defending team may guard this player with slightly
             more concentration. Moreover, the player may end up taking worse shots if they believe that they are "hot"
-            -- a phrase now known as a "heat check".
+            -- a phrase now known as a "heat check."
         </p>
 
         <p>GTV assess this potential streakiness of basketball players' shots through three methods: analyzing (1) the
@@ -92,7 +92,7 @@
             men's and women's basketball teams' shot chart data for the 2025-26 season. Within the data, the hot hand
             boils down to conditional probability, and the relationship between three key variables:
             \(\text{Pr}(H\mid M^i)\), \(\text{Pr}(H\mid H^i)\)
-            and \(\text{Pr}(H)\). Here, \(H\) corresponds to a "hit", or a basket successfully scored, and \(M\)
+            and \(\text{Pr}(H)\). Here, \(H\) corresponds to a "hit," or a basket successfully scored, and \(M\)
             indicates a missed
             shot. I also expand the notation using the superscript \(i\) to indicate a sequence of prior hits or misses.
             So, the probability notation \(\text{Pr}(H\mid M^2)\) signifies the probability (\(\text{Pr}\)) of a player
@@ -123,9 +123,16 @@
 
         <div class="table">
             <table>
-                <caption>Note: since the first shot of each game cannot be conditioned, the parenthetical values in
-                    columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon which
-                    each probability is based is given in parentheses.</caption>
+                <caption>
+                    <div style="display: flex;">
+                        <div style="width: 70%;">Note: since the first shot of each game cannot be conditioned, the
+                            parenthetical values in
+                            columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon
+                            which
+                            each probability is based is given in parentheses.</div>
+                        <div style="text-align: right; width: 30%;">Table 1</div>
+                    </div>
+                </caption>
                 <thead>
                     <tr>
                         <th>Player</th>
@@ -299,7 +306,7 @@
             is. In the context of serial correlations, a test of statistical significance answers the question: "if a
             player truly did not have any correlation between \(\text{Pr}(H)\) and \(\text{Pr}(H\mid H^1)\), how likely
             is it to see the result I
-            saw?". If it was very unlikely to see the actual result (with probability less than 5%), then the result is
+            saw?" If it was very unlikely to see the actual result (with probability less than 5%), then the result is
             statistically significant (and strong). Over all ten players, none of the serial correlations are
             statistically significant. </p>
 
@@ -457,7 +464,7 @@
             proportion of made
             shots, Miller and Sanjurjo, in "<a
                 href="https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA14943?casa_token=OA6QkR6r_aoAAAAA%3ALqBtnoyoWEQXEioiDV-OmVb9k6q6zEnCLc5L3_pf70MVT4ShthQYPRaau0Hp4aZL1Q3wtqZMGG3J2w"
-                target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers"</a>,
+                target="_blank">Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers,"</a>
             provide a recursive formula:
         </p>
     </div>
@@ -516,9 +523,15 @@
 
         <div class="table">
             <table>
-                <caption>Note: since the first shot of each game cannot be conditioned, the parenthetical values in
-                    columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon which
-                    each probability is based is given in parentheses.
+                <caption>
+                    <div style="display: flex;">
+                        <div style="width: 70%;">Note: since the first shot of each game cannot be conditioned, the
+                            parenthetical values in
+                            columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon
+                            which
+                            each probability is based is given in parentheses.</div>
+                        <div style="text-align: right; width: 30%;">Table 2</div>
+                    </div>
                 </caption>
                 <thead>
                     <tr>
@@ -727,9 +740,16 @@
 
         <div class="table">
             <table>
-                <caption>Note: since the first shot of each game cannot be conditioned, the parenthetical values in
-                    columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon which
-                    each probability is based is given in parentheses.</caption>
+                <caption>
+                    <div style="display: flex;">
+                        <div style="width: 70%;">Note: since the first shot of each game cannot be conditioned, the
+                            parenthetical values in
+                            columns 4 and 6 do not sum to the parenthetical value in column 5. The number of shots upon
+                            which
+                            each probability is based is given in parentheses.</div>
+                        <div style="text-align: right; width: 30%;">Table 3</div>
+                    </div>
+                </caption>
                 <thead>
                     <tr>
                         <th>Player</th>
@@ -930,8 +950,8 @@
         <p>Code for this project can be found in my <a href="https://github.com/nikhilc52/hot_hand">GitHub
                 repository.</a></p>
         <p>All content written, coded, and arranged by <a href="https://nikhilchinchalkar.com/" target="_blank">
-                Nikhil Chinchalkar</a></p>
-        <p>Mar. 30, 2026</p>
+                Nikhil Chinchalkar.</a></p>
+        <p>Apr. 30, 2026</p>
         <a href="https://nikhilchinchalkar.com/" target="_blank"><img src="images/webp/lotus.webp"></a>
     </div>
 </body>
